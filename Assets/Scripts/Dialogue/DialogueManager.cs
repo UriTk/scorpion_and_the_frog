@@ -212,7 +212,13 @@ namespace PointClickDetective
         /// </summary>
         public void ShowDialogueSequence(DialogueSequenceSO sequence)
         {
-            if (sequence == null || sequence.lines.Count == 0) return;
+            Debug.Log($"[DialogueManager] ShowDialogueSequence called with: {sequence?.name}, isShowing={isShowing}");
+            
+            if (sequence == null || sequence.lines.Count == 0)
+            {
+                Debug.Log($"[DialogueManager] ShowDialogueSequence aborted - sequence null or empty");
+                return;
+            }
             
             // Clear legacy override when using proper sequences
             legacyPortraitOverride = null;
@@ -227,15 +233,27 @@ namespace PointClickDetective
                 if (line.ShouldShow())
                 {
                     dialogueQueue.Enqueue(line);
+                    Debug.Log($"[DialogueManager] Queued line: '{line.text?.Substring(0, Mathf.Min(30, line.text?.Length ?? 0))}...'");
                 }
             }
             
-            if (dialogueQueue.Count == 0) return;
+            Debug.Log($"[DialogueManager] Queued {dialogueQueue.Count} lines");
+            
+            if (dialogueQueue.Count == 0)
+            {
+                Debug.Log($"[DialogueManager] ShowDialogueSequence aborted - no valid lines after filtering");
+                return;
+            }
             
             // Start first line
             if (!isShowing)
             {
+                Debug.Log($"[DialogueManager] Starting first line");
                 StartNextLine();
+            }
+            else
+            {
+                Debug.Log($"[DialogueManager] Already showing dialogue - new sequence queued but won't auto-start");
             }
         }
         
@@ -300,9 +318,40 @@ namespace PointClickDetective
         
         public void ForceClose()
         {
+            Debug.Log($"[DialogueManager] ForceClose called");
             dialogueQueue.Clear();
             currentSequence = null;
-            CloseDialogue();
+            currentLine = null;
+            isShowing = false;
+            isTyping = false;
+            
+            // Stop all coroutines
+            if (typewriterCoroutine != null)
+            {
+                StopCoroutine(typewriterCoroutine);
+                typewriterCoroutine = null;
+            }
+            if (animationFinishCoroutine != null)
+            {
+                StopCoroutine(animationFinishCoroutine);
+                animationFinishCoroutine = null;
+            }
+            if (panelFadeCoroutine != null)
+            {
+                StopCoroutine(panelFadeCoroutine);
+                panelFadeCoroutine = null;
+            }
+            
+            // Stop animation
+            StopAnimationPlayback();
+            
+            // Hide immediately
+            if (dialoguePanel != null)
+            {
+                dialoguePanel.SetActive(false);
+            }
+            
+            OnDialogueEnded?.Invoke();
         }
         
         #endregion
@@ -594,6 +643,12 @@ namespace PointClickDetective
                 {
                     Debug.Log($"[DialogueManager] Sequence complete - setting flag: {currentSequence.setFlagOnComplete}");
                     GameManager.Instance?.SetFlag(currentSequence.setFlagOnComplete);
+                }
+                
+                if (!string.IsNullOrEmpty(currentSequence.removeFlagOnComplete))
+                {
+                    Debug.Log($"[DialogueManager] Sequence complete - removing flag: {currentSequence.removeFlagOnComplete}");
+                    GameManager.Instance?.RemoveFlag(currentSequence.removeFlagOnComplete);
                 }
                 
                 if (currentSequence.discoverClueOnComplete != null)

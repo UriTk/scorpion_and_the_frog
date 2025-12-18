@@ -143,8 +143,11 @@ namespace PointClickDetective
                     ? rule.scorpionSceneId 
                     : rule.frogSceneId;
                 
+                Debug.Log($"[GameManager] Location rule active: {rule.ruleName}, target scene for {character}: {targetScene}, current: {currentSceneId}");
+                
                 if (targetScene != currentSceneId)
                 {
+                    Debug.Log($"[GameManager] Forcing scene change from {currentSceneId} to {targetScene}");
                     currentSceneId = targetScene;
                     OnSceneChanged?.Invoke(currentSceneId);
                     GameSceneManager.Instance?.LoadScene(currentSceneId);

@@ -14,6 +14,9 @@ namespace PointClickDetective
         [Tooltip("Flag to set when this entire sequence completes")]
         public string setFlagOnComplete;
         
+        [Tooltip("Flag to REMOVE when this entire sequence completes (e.g., unlock map)")]
+        public string removeFlagOnComplete;
+        
         [Tooltip("Clue to discover when this entire sequence completes")]
         public ClueSO discoverClueOnComplete;
         

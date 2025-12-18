@@ -225,6 +225,15 @@ namespace PointClickDetective
         /// </summary>
         public void OnEnter()
         {
+            Debug.Log($"[GameSceneContainer] OnEnter called for scene: {sceneId}, character: {GameManager.Instance?.CurrentCharacter}");
+            
+            // Force close any existing dialogue from previous scene
+            if (DialogueManager.Instance != null && DialogueManager.Instance.IsShowing)
+            {
+                Debug.Log($"[GameSceneContainer] Force closing existing dialogue before entry");
+                DialogueManager.Instance.ForceClose();
+            }
+            
             bool isFirstVisit = false;
             
             // Check if first visit
@@ -278,72 +287,109 @@ namespace PointClickDetective
         private void TriggerEntryDialogue(bool isFirstVisit)
         {
             DialogueSequenceSO dialogue = null;
+            CharacterType character = GameManager.Instance?.CurrentCharacter ?? CharacterType.Scorpion;
+            
+            Debug.Log($"[GameSceneContainer] TriggerEntryDialogue for scene '{sceneId}': isFirstVisit={isFirstVisit}, character={character}");
             
             // First visit takes priority
             if (isFirstVisit && firstVisitDialogue != null)
             {
+                Debug.Log($"[GameSceneContainer] Checking first visit dialogue. RequiresFlag='{firstVisitRequiresFlag}'");
+                
                 // Check flag requirement
                 if (!string.IsNullOrEmpty(firstVisitRequiresFlag))
                 {
                     if (GameManager.Instance != null && GameManager.Instance.HasFlag(firstVisitRequiresFlag))
                     {
                         dialogue = firstVisitDialogue;
+                        Debug.Log($"[GameSceneContainer] Using first visit dialogue (flag met)");
+                    }
+                    else
+                    {
+                        Debug.Log($"[GameSceneContainer] First visit dialogue skipped - flag '{firstVisitRequiresFlag}' not set");
                     }
                 }
                 else
                 {
                     dialogue = firstVisitDialogue;
+                    Debug.Log($"[GameSceneContainer] Using first visit dialogue (no flag required)");
                 }
             }
             
             // If no first visit dialogue, check character-specific entry
             if (dialogue == null)
             {
-                CharacterType character = GameManager.Instance?.CurrentCharacter ?? CharacterType.Scorpion;
-                
-                if (character == CharacterType.Scorpion && scorpionEntryDialogue != null)
+                if (character == CharacterType.Scorpion)
                 {
-                    bool meetsRequirement = string.IsNullOrEmpty(scorpionEntryRequiresFlag) ||
-                        (GameManager.Instance?.HasFlag(scorpionEntryRequiresFlag) ?? false);
+                    Debug.Log($"[GameSceneContainer] Checking Scorpion entry: dialogue={scorpionEntryDialogue?.name}, requiresFlag='{scorpionEntryRequiresFlag}', oncePerSession={scorpionEntryOncePerSession}");
                     
-                    if (meetsRequirement)
+                    if (scorpionEntryDialogue != null)
                     {
-                        // Check once-per-session
-                        if (scorpionEntryOncePerSession)
+                        bool meetsRequirement = string.IsNullOrEmpty(scorpionEntryRequiresFlag) ||
+                            (GameManager.Instance?.HasFlag(scorpionEntryRequiresFlag) ?? false);
+                        
+                        if (meetsRequirement)
                         {
-                            string sessionFlag = $"session_scorpion_entry_{sceneId}";
-                            if (GameManager.Instance != null && !GameManager.Instance.HasFlag(sessionFlag))
+                            if (scorpionEntryOncePerSession)
                             {
-                                GameManager.Instance.SetFlag(sessionFlag);
+                                string sessionFlag = $"session_scorpion_entry_{sceneId}";
+                                if (GameManager.Instance != null && !GameManager.Instance.HasFlag(sessionFlag))
+                                {
+                                    GameManager.Instance.SetFlag(sessionFlag);
+                                    dialogue = scorpionEntryDialogue;
+                                    Debug.Log($"[GameSceneContainer] Using Scorpion entry dialogue (once per session, first time)");
+                                }
+                                else
+                                {
+                                    Debug.Log($"[GameSceneContainer] Scorpion entry skipped - already played this session");
+                                }
+                            }
+                            else
+                            {
                                 dialogue = scorpionEntryDialogue;
+                                Debug.Log($"[GameSceneContainer] Using Scorpion entry dialogue");
                             }
                         }
                         else
                         {
-                            dialogue = scorpionEntryDialogue;
+                            Debug.Log($"[GameSceneContainer] Scorpion entry skipped - flag requirement not met");
                         }
                     }
                 }
-                else if (character == CharacterType.Frog && frogEntryDialogue != null)
+                else // Frog
                 {
-                    bool meetsRequirement = string.IsNullOrEmpty(frogEntryRequiresFlag) ||
-                        (GameManager.Instance?.HasFlag(frogEntryRequiresFlag) ?? false);
+                    Debug.Log($"[GameSceneContainer] Checking Frog entry: dialogue={frogEntryDialogue?.name}, requiresFlag='{frogEntryRequiresFlag}', oncePerSession={frogEntryOncePerSession}");
                     
-                    if (meetsRequirement)
+                    if (frogEntryDialogue != null)
                     {
-                        // Check once-per-session
-                        if (frogEntryOncePerSession)
+                        bool meetsRequirement = string.IsNullOrEmpty(frogEntryRequiresFlag) ||
+                            (GameManager.Instance?.HasFlag(frogEntryRequiresFlag) ?? false);
+                        
+                        if (meetsRequirement)
                         {
-                            string sessionFlag = $"session_frog_entry_{sceneId}";
-                            if (GameManager.Instance != null && !GameManager.Instance.HasFlag(sessionFlag))
+                            if (frogEntryOncePerSession)
                             {
-                                GameManager.Instance.SetFlag(sessionFlag);
+                                string sessionFlag = $"session_frog_entry_{sceneId}";
+                                if (GameManager.Instance != null && !GameManager.Instance.HasFlag(sessionFlag))
+                                {
+                                    GameManager.Instance.SetFlag(sessionFlag);
+                                    dialogue = frogEntryDialogue;
+                                    Debug.Log($"[GameSceneContainer] Using Frog entry dialogue (once per session, first time)");
+                                }
+                                else
+                                {
+                                    Debug.Log($"[GameSceneContainer] Frog entry skipped - already played this session");
+                                }
+                            }
+                            else
+                            {
                                 dialogue = frogEntryDialogue;
+                                Debug.Log($"[GameSceneContainer] Using Frog entry dialogue");
                             }
                         }
                         else
                         {
-                            dialogue = frogEntryDialogue;
+                            Debug.Log($"[GameSceneContainer] Frog entry skipped - flag requirement not met");
                         }
                     }
                 }
@@ -352,7 +398,20 @@ namespace PointClickDetective
             // Play the dialogue
             if (dialogue != null)
             {
-                DialogueManager.Instance?.ShowDialogueSequence(dialogue);
+                Debug.Log($"[GameSceneContainer] Playing entry dialogue: {dialogue.name}");
+                
+                if (DialogueManager.Instance == null)
+                {
+                    Debug.LogError($"[GameSceneContainer] DialogueManager.Instance is NULL! Cannot play entry dialogue.");
+                }
+                else
+                {
+                    DialogueManager.Instance.ShowDialogueSequence(dialogue);
+                }
+            }
+            else
+            {
+                Debug.Log($"[GameSceneContainer] No entry dialogue to play");
             }
         }
         

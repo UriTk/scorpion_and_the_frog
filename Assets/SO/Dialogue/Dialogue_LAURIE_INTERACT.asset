@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145e893c5cbda854a81f53ec342d9db4, type: 3}
+  m_Name: Dialogue_LAURIE_INTERACT
+  m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
+  lines:
+  - speaker: {fileID: 0}
+    text: "Who's that hiding in the shadows? I don't like how she's looking at me.
+      It's\u2026 unsettling. Does she know something?"
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: 
+    triggerSceneChange: 
+    delayBefore: 0
+  - speaker: {fileID: 0}
+    text: Red, red like blood. So much blood there was, and so much more to come
+      if he gets his way.
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: FALSE
+    triggerSceneChange: 
+    delayBefore: 0
+  - speaker: {fileID: 0}
+    text: Er, what was that?
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: FALSE
+    triggerSceneChange: 
+    delayBefore: 0
+  - speaker: {fileID: 0}
+    text: Rude fellow he was, never once apologized for bumping into poor Laurie.
+      Seemed to think himself quite the important gentleman, fancy new outfit and
+      all.
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: FALSE
+    triggerSceneChange: 
+    delayBefore: 0
+  - speaker: {fileID: 0}
+    text: What could that possibly mean? I don't think I'll get much out of her.
+      She gives me the creeps.
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: TRUE
+    triggerSceneChange: 
+    delayBefore: 0
+  setFlagOnComplete: 
+  discoverClueOnComplete: {fileID: 0}
+  revealQuestionOnComplete: {fileID: 0}

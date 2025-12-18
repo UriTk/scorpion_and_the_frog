@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 087702ad1c58ca845984f1458a476eda, type: 3}
+  m_Name: Loris
+  m_EditorClassIdentifier: PointClickDetective::PointClickDetective.SpeakerSO
+  speakerName: 
+  defaultPortrait: {fileID: 0}
+  hidePortrait: 0
+  charactersPerSecond: 30
+  soundInterval: 0.05
+  typingSounds: []
+  pitchRange: {x: 0.95, y: 1.05}
+  volume: 1
+  useItalicSettings: 0
+  italicCharsPerSecond: 25
+  italicTypingSounds: []
+  italicPitchRange: {x: 1, y: 1.15}
+  italicVolume: 0.8
+  useBoldSettings: 0
+  boldCharsPerSecond: 20
+  boldTypingSounds: []
+  boldPitchRange: {x: 0.85, y: 1}
+  boldVolume: 1

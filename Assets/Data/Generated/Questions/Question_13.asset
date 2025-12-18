@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad65a016fa08934c8bb7ba4d330d3c4, type: 3}
+  m_Name: Question_13
+  m_EditorClassIdentifier: PointClickDetective::PointClickDetective.QuestionSO
+  questionId: 13
+  questionText: Exited going ___
+  correctAnswer:
+    answerText: west
+    requiredClueIds: 01000000070000000e000000
+    unlockFlag: 
+  fakeAnswers:
+  - answerText: east
+    requiredClueIds: 01000000070000000e000000
+    unlockFlag: 
+  - answerText: south
+    requiredClueIds: 01000000070000000e000000
+    unlockFlag: 
+  - answerText: north
+    requiredClueIds: 01000000070000000e000000
+    unlockFlag: 
+  additionalDescription: The killer exited the crime scene going ___
+  difficulty: 0
+  category: 2
+  displayOrder: 13

@@ -1,0 +1,153 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145e893c5cbda854a81f53ec342d9db4, type: 3}
+  m_Name: Dialogue_CRIME_SCENE_ARRIVE
+  m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
+  lines:
+  - speaker: {fileID: 0}
+    text: Something's not right here.
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: TRUE
+    triggerSceneChange: 
+    delayBefore: 0
+  - speaker: {fileID: 0}
+    text: Hey, Ernie? You might want to see this.
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: FALSE
+    triggerSceneChange: 
+    delayBefore: 0
+  - speaker: {fileID: 0}
+    text: Ernie?
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: FALSE
+    triggerSceneChange: 
+    delayBefore: 0
+  - speaker: {fileID: 0}
+    text: What is it?
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: FALSE
+    triggerSceneChange: 
+    delayBefore: 0
+  - speaker: {fileID: 0}
+    text: You seemed a little out of it there. Is everything okay?
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: FALSE
+    triggerSceneChange: 
+    delayBefore: 0
+  - speaker: {fileID: 0}
+    text: "It's just\u2026. This scene? It reminds me of the day my parents died.
+      They told me they never found the bodies\u2026 just bits. A struggle maybe,
+      and they were gone. But they never found more than a limb or two, just like
+      this guy."
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: FALSE
+    triggerSceneChange: 
+    delayBefore: 0
+  - speaker: {fileID: 0}
+    text: Want me to cover for you while you take a breather?
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: FALSE
+    triggerSceneChange: 
+    delayBefore: 0
+  - speaker: {fileID: 0}
+    text: "Don't worry about me. Worry about this guy\u2026. Or what's left of him."
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: FALSE
+    triggerSceneChange: 
+    delayBefore: 0
+  - speaker: {fileID: 0}
+    text: We got a name on him?
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: FALSE
+    triggerSceneChange: 
+    delayBefore: 0
+  - speaker: {fileID: 0}
+    text: Daedalus, last name Doornail. He dropped his wallet, but he wasn't holding
+      much. Poor sod was on his way home, I'd assume.
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: FALSE
+    triggerSceneChange: 
+    delayBefore: 0
+  - speaker: {fileID: 0}
+    text: Well, there must be something that'll give us a "leg" up in this investigation.
+      Let's look around, eh?
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: FALSE
+    triggerSceneChange: 
+    delayBefore: 0
+  - speaker: {fileID: 0}
+    text: "\u2026\u2026.."
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: FALSE
+    triggerSceneChange: 
+    delayBefore: 0
+  - speaker: {fileID: 0}
+    text: Sorry.
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: FALSE
+    triggerSceneChange: 
+    delayBefore: 0
+  setFlagOnComplete: 
+  discoverClueOnComplete: {fileID: 0}
+  revealQuestionOnComplete: {fileID: 0}

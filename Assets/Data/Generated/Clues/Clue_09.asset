@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14557d58f52d5fb47bf336c485a118f8, type: 3}
+  m_Name: Clue_09
+  m_EditorClassIdentifier: PointClickDetective::PointClickDetective.ClueSO
+  clueId: clue_09
+  clueNumber: 9
+  clueName: NPC says that they just went to the club and it was funny that their
+    friend thought they had been there right from the start of the dance. But no,
+    they only joined at the last hour.
+  description: Yaknow, it's a funny place, that. I just dipped in for a pint and
+    a pizza and my buddy Jones thought I'd been there the whole time. Man's had too
+    many drinks, I'd say.
+  additionalDescription: NPC remarks that there's so much going on (loud music, thumping
+    bass, strobe lights and drunk people) that everyone is too focused on themselves
+    to really notice anyone acting strangely
+  icon: {fileID: 4454631428275665778, guid: cc88c81872c09b548a55a60b62facf9c, type: 3}
+  visibleTo: 2
+  visibilityReason: Frog, he's inside the cafe
+  locationSceneId: cafe
+  relatedQuestionIds: 05000000
+  isFakeClue: 0
+  fakeClueExplanation: 

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145e893c5cbda854a81f53ec342d9db4, type: 3}
+  m_Name: Dialogue_EPILOGUE
+  m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
+  lines:
+  - speaker: {fileID: 0}
+    text: "It's been a month since I put my best friend behind bars. I suppose it's
+      a relief to finally have closure\u2026 but the shock hasn't quite worn off.
+      I'm packing up my practice, I've decided - I just don't think I can do this
+      anymore."
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: 
+    triggerSceneChange: 
+    delayBefore: 0
+  - speaker: {fileID: 0}
+    text: "Besides I've solved my one big case. It's time\u2026 time to move on."
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: TRUE
+    triggerSceneChange: credits
+    delayBefore: 0
+  setFlagOnComplete: 
+  discoverClueOnComplete: {fileID: 0}
+  revealQuestionOnComplete: {fileID: 0}

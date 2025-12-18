@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 087702ad1c58ca845984f1458a476eda, type: 3}
+  m_Name: Scorpion
+  m_EditorClassIdentifier: PointClickDetective::PointClickDetective.SpeakerSO
+  speakerName: 
+  defaultPortrait: {fileID: 4628833558716816028, guid: b0974419002af6144badb932f844762f, type: 3}
+  hidePortrait: 0
+  charactersPerSecond: 30
+  soundInterval: 0.05
+  typingSounds:
+  - {fileID: 8300000, guid: 6f9d6d7b02feda447a931f7d6461879a, type: 3}
+  - {fileID: 8300000, guid: 6a8a79db29770564bb0dc788e1c13bd6, type: 3}
+  pitchRange: {x: 0.95, y: 1.05}
+  volume: 0.8
+  useItalicSettings: 1
+  italicCharsPerSecond: 25
+  italicTypingSounds:
+  - {fileID: 8300000, guid: e2c54431a9d86de4e85c305e86143e3f, type: 3}
+  - {fileID: 8300000, guid: 6ac39d08232e07041b0ca3ce5bd57013, type: 3}
+  italicPitchRange: {x: 1, y: 1.3}
+  italicVolume: 1
+  useBoldSettings: 1
+  boldCharsPerSecond: 20
+  boldTypingSounds:
+  - {fileID: 8300000, guid: b8a6246637924a946b6159200f1a6d30, type: 3}
+  - {fileID: 8300000, guid: c37d5261fc362d54f82bc60d8a17a2ee, type: 3}
+  boldPitchRange: {x: 0.85, y: 1}
+  boldVolume: 0.5

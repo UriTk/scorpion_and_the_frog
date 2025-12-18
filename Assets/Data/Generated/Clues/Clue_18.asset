@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14557d58f52d5fb47bf336c485a118f8, type: 3}
+  m_Name: Clue_18
+  m_EditorClassIdentifier: PointClickDetective::PointClickDetective.ClueSO
+  clueId: clue_18
+  clueNumber: 18
+  clueName: Red painted knife
+  description: A knife, red like the blood splattered on the snow! But which is the
+    real murder weapon, I wonder?
+  additionalDescription: Bloody knife which is next to a bunch of paint buckets in
+    the alley
+  icon: {fileID: 4454631428275665778, guid: cc88c81872c09b548a55a60b62facf9c, type: 3}
+  visibleTo: 2
+  visibilityReason: Frog, can see colors
+  locationSceneId: alley
+  relatedQuestionIds: 01000000
+  isFakeClue: 1
+  fakeClueExplanation: Fake clue that frog put together. The player notices that
+    the paint buckets behind the knife are all sorts of different colors and were
+    probably used to paint the knife red.

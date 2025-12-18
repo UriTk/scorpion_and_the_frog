@@ -1,0 +1,133 @@
+SequenceID,LineIndex,Speaker,SpeakerDisplayName,Dialogue,Portrait,TriggerFlag,TriggerScene,TriggerOnInteractable,TriggerConditionFlag,TriggerConditionNotFlag,IsThought,AutoAdvance,TypewriterSpeed
+INTRO_OFFICE,0,Scorpion,Ernest,Machine's broken again.,,,,,,FALSE,FALSE,1
+INTRO_OFFICE,1,Frog,Ferdinand,"Oh no, missing your fourth cup of the day? You could say that borders on…. criminal.",,,,,,FALSE,FALSE,1
+INTRO_OFFICE,2,Scorpion,Ernest,"Fourth, and a fifth if you keep that up.",,,,,,FALSE,FALSE,1
+INTRO_OFFICE,3,Phone,Phone,"*ring ring, ring ring*",,,,,,FALSE,FALSE,1
+INTRO_OFFICE,4,Margot,Margot,You're needed. Now. There's been a murder. *click*,,,,,,FALSE,FALSE,1
+INTRO_OFFICE,5,Frog,Ferdinand,"Pleasure as always, Margot.",,,,,,FALSE,FALSE,1
+CRIME_SCENE_ARRIVE,0,Scorpion,Ernest,Something's not right here.,,,,,,TRUE,FALSE,1
+CRIME_SCENE_ARRIVE,1,Frog,Ferdinand,"Hey, Ernie? You might want to see this.",,,,,,FALSE,FALSE,1
+CRIME_SCENE_ARRIVE,2,Frog,Ferdinand,Ernie?,,,,,,FALSE,FALSE,1
+CRIME_SCENE_ARRIVE,3,Scorpion,Ernest,What is it?,,,,,,FALSE,FALSE,1
+CRIME_SCENE_ARRIVE,4,Frog,Ferdinand,You seemed a little out of it there. Is everything okay?,,,,,,FALSE,FALSE,1
+CRIME_SCENE_ARRIVE,5,Scorpion,Ernest,"It's just…. This scene? It reminds me of the day my parents died. They told me they never found the bodies… just bits. A struggle maybe, and they were gone. But they never found more than a limb or two, just like this guy.",,,,,,FALSE,FALSE,1
+CRIME_SCENE_ARRIVE,6,Frog,Ferdinand,Want me to cover for you while you take a breather?,,,,,,FALSE,FALSE,1
+CRIME_SCENE_ARRIVE,7,Scorpion,Ernest,Don't worry about me. Worry about this guy…. Or what's left of him.,,,,,,FALSE,FALSE,1
+CRIME_SCENE_ARRIVE,8,Frog,Ferdinand,We got a name on him?,,,,,,FALSE,FALSE,1
+CRIME_SCENE_ARRIVE,9,Scorpion,Ernest,"Daedalus, last name Doornail. He dropped his wallet, but he wasn't holding much. Poor sod was on his way home, I'd assume.",,,,,,FALSE,FALSE,1
+CRIME_SCENE_ARRIVE,10,Frog,Ferdinand,"Well, there must be something that'll give us a ""leg"" up in this investigation. Let's look around, eh?",,,,,,FALSE,FALSE,1
+CRIME_SCENE_ARRIVE,11,Scorpion,Ernest,……..,,,,,,FALSE,FALSE,1
+CRIME_SCENE_ARRIVE,12,Frog,Ferdinand,Sorry.,,,,,,FALSE,FALSE,1
+CRIME_SCENE_CLUES_DONE,0,Frog,Ferdinand,"I think we must have picked this place clean twice over, but I'm not seeing… well, anything.",,all_alley_clues_found,,,,,FALSE,FALSE,1
+CRIME_SCENE_CLUES_DONE,1,Scorpion,Ernest,Are you thinking what I am?,,,,,,FALSE,FALSE,1
+CRIME_SCENE_CLUES_DONE,2,Frog,Ferdinand,"Yep. Our perp's done a runner. He kills, makes a break for it… and then what?",,,,,,FALSE,FALSE,1
+CRIME_SCENE_CLUES_DONE,3,Scorpion,Ernest,"Well, where did he go? I'm willing to bet that a guy who leaves evidence lying around like this ain't exactly careful about where he stashes the evidence. Let's look around and see what we can dig up.",,,,,,FALSE,FALSE,1
+WEAPONS_FOUND,0,Scorpion,Ernest,"Ferd? Take a look at this place.",,weapons_found,,,,,FALSE,FALSE,1
+WEAPONS_FOUND,1,Frog,Ferdinand,Cute! Wonder if they do pizza.,,,,,,FALSE,FALSE,1
+WEAPONS_FOUND,2,Scorpion,Ernest,Really?,,,,,,FALSE,FALSE,1
+WEAPONS_FOUND,3,Frog,Ferdinand,"We didn't have dinner, you know. What's that sign say?",,,,,,FALSE,FALSE,1
+ALL_ALLEY_CLUES,0,Scorpion,Ernest,"I think that's all the clues our killer left us, at least here. Little careless, isn't he?",,all_outside_clues_found,,,,,FALSE,FALSE,1
+ALL_ALLEY_CLUES,1,Frog,Ferdinand,Very.,,,,,,FALSE,FALSE,1
+ALL_ALLEY_CLUES,2,Scorpion,Ernest,"We ought to see if anyone saw anything. Shall we?",,,,,,FALSE,FALSE,1
+ALL_ALLEY_CLUES,3,Frog,Ferdinand,"After you, Ernie.",,,,,,FALSE,FALSE,1
+RETURN_CRIME_SCENE,0,Scorpion,Ernest,"Well, we're back where we started. The best vantage point as far as eyewitnesses go has got to be somewhere around here.",,can_enter_cafe,alley,,,,FALSE,FALSE,1
+RETURN_CRIME_SCENE,1,Frog,Ferdinand,I'll tackle the cafe.,,,,,,FALSE,FALSE,1
+RETURN_CRIME_SCENE,2,Scorpion,Ernest,"Then I'll stay out here and keep watch. You never know, they come back to the scene sometimes - for what reason, I'll never know. This one clearly isn't too worried about hiding his tracks.",,,,,,FALSE,FALSE,1
+CAFE_ENTER_LIN,0,Lin,Lin,"Hey, Ferd! Fancy seeing you here again. Back for another?",,,cafe_int,,,,,FALSE,FALSE,1
+CAFE_ENTER_LIN,1,Frog,Ferdinand,"Not this time, my friend. Here on a case. Got a second?",,,,,,FALSE,FALSE,1
+CAFE_ENTER_LIN,2,Lin,Lin,Always got a minute for my best bud! This is Ida.,,,,,,FALSE,FALSE,1
+CAFE_ENTER_LIN,3,Ida,Ida,Blblblbl. (Nice to meet you.),,,,,,FALSE,FALSE,1
+CAFE_ENTER_LIN,4,Frog,Ferdinand,"Don't suppose you saw anything last night, my friend? There was a murder, not far from here. We're taking statements.",,,,,,FALSE,FALSE,1
+CAFE_ENTER_LIN,5,Lin,Lin,"Oh golly, that's awful! No, last night I was a little out of sorts. Drowning my sorrows, I guess you could say. *He glances meaningfully at Ida* Weather was awful, so you couldn't see much out those windows.",,,,,,FALSE,FALSE,1
+CAFE_ENTER_LIN,6,Ida,Ida,"Blblblb, blblblblbl. Blb.",,,,,,FALSE,FALSE,1
+CAFE_ENTER_LIN,7,Frog,Ferdinand,"Good for him. He's had a rocky love life, that one.",,,,,,TRUE,FALSE,1
+SCORPION_TWILIGHT,0,Scorpion,Ernest,It's quiet tonight. Nice.,,talked_to_lin,,alley,,,TRUE,FALSE,1
+SCORPION_TWILIGHT,1,Scorpion,Ernest,"It gets so busy in the morning, when the city wakes up for work. And again at night when they return. I much prefer these twilight hours, when it's a little less noisy… helps me clear my head.",,,,,,TRUE,FALSE,1
+SCORPION_SNOW,0,Scorpion,Ernest,"It was really coming down last night, huh? I doubt anyone made it home without wet socks.",,,,,snow_interactable,,FALSE,FALSE,1
+LAURIE_INTERACT,0,Frog,Ferdinand,Who's that hiding in the shadows? I don't like how she's looking at me. It's… unsettling. Does she know something?,,,cafe_int,,laurie_interactable,,TRUE,FALSE,1
+LAURIE_INTERACT,1,Laurie,Laurie,"Red, red like blood. So much blood there was, and so much more to come if he gets his way.",,,,,,FALSE,FALSE,1
+LAURIE_INTERACT,2,Frog,Ferdinand,"Er, what was that?",,,,,,FALSE,FALSE,1
+LAURIE_INTERACT,3,Laurie,Laurie,"Rude fellow he was, never once apologized for bumping into poor Laurie. Seemed to think himself quite the important gentleman, fancy new outfit and all.",,,,,,FALSE,FALSE,1
+LAURIE_INTERACT,4,Frog,Ferdinand,What could that possibly mean? I don't think I'll get much out of her. She gives me the creeps.,,,,,,TRUE,FALSE,1
+HERRING_FIRST,0,Finley,Finley,"Hey, barkeep. Another.",,,cafe_int,,herring_interactable,,FALSE,FALSE,1
+HERRING_INTERACT,0,Frog,Ferdinand,"Ferdinand J. Croaker, P.I. I'd like to ask you a few questions, if you don't mind.",,,cafe_int,talked_to_herring_first,herring_interactable,,FALSE,FALSE,1
+HERRING_INTERACT,1,Finley,Finley,"Finley T. Cod, customer. And yes, I do mind. Get lost, why don'tcha?",,,,,,FALSE,FALSE,1
+HERRING_INTERACT,2,Frog,Ferdinand,Watch your tone. Where were you last night?,,,,,,FALSE,FALSE,1
+HERRING_INTERACT,3,Finley,Finley,I ain't gotta answer to some cop. Let me finish my drink in peace.,,,,,,FALSE,FALSE,1
+HERRING_INTERACT,4,Frog,Ferdinand,"I'll have you know I'm good cop. But I suggest you answer me, or I might have to haul in my associate. And you DON'T want to see him before his evening coffee. Gets cranky.",,,,,,FALSE,FALSE,1
+HERRING_INTERACT,5,Finley,Finley,"Whatever. I was here, in the evening. Everyone can vouch for that.",,,,,,FALSE,FALSE,1
+HERRING_INTERACT,6,Frog,Ferdinand,All night?,,,,,,FALSE,FALSE,1
+HERRING_INTERACT,7,Finley,Finley,Buzz off. I told you where I was.,,,,,,FALSE,FALSE,1
+HERRING_INTERACT,8,Frog,Ferdinand,"Alright, since you asked so nicely. But I've got my eye on you.",,,,,,FALSE,FALSE,1
+BARTENDER_INTERACT,0,Frog,Ferdinand,"You see anyone come in last night, around mid evening?",,,cafe_int,,bartender_interactable,,FALSE,FALSE,1
+BARTENDER_INTERACT,1,Bartender,Bartender,"After you? No. But that fishy gentleman came in just before you. Wringing his hands under the table, looking around all scared, like. Asked for the strongest thing I had. None too kindly, either.",,,,,,FALSE,FALSE,1
+BARTENDER_INTERACT,2,Bartender,Bartender,You think it was someone here?,,,,,,FALSE,FALSE,1
+BARTENDER_INTERACT,3,Frog,Ferdinand,It would be an easy place to get to from the crime scene. But we won't know for sure unless we catch the bugger.,,,,,,FALSE,FALSE,1
+BARTENDER_INTERACT,4,Bartender,Bartender,"Good luck, Croaker. Bad energy afoot these days.",,,,,,FALSE,FALSE,1
+NPC_OVERHEAR,0,NPC,Patron,"Hey, funny story last night. I dropped by the Rum'n'Jazz for a buzz - Some TOTAL stranger comes up and says ""Ay Sherry! Come over here and 'ave some drinks wiv us. LIVE a little.""",,,cafe_int,,npc_group_interactable,,FALSE,FALSE,1
+NPC_OVERHEAR,1,NPC2,Patron's Friend,"What, like he knew you?",,,,,,FALSE,FALSE,1
+NPC_OVERHEAR,2,NPC,Patron,"Somethin like that. Everyone there's a bit heavy on the juice, if you catch my drift. Acted like he'd known me my whole life. Nice enough guy, but BOY, was he sozzled.",,,,,,FALSE,FALSE,1
+NPC_OVERHEAR,3,Frog,Ferdinand,Hmm….,,,,,,TRUE,FALSE,1
+LIN_REVISIT,0,Lin,Lin,"And THAT'S why I'm never experimenting with mayonnaise again.",,,cafe_int,talked_to_lin,lin_interactable,,FALSE,FALSE,1
+LIN_REVISIT,1,Ida,Ida,Blb. (Audible disgust),,,,,,FALSE,FALSE,1
+CAFE_EXIT,0,Scorpion,Ernest,Anything useful?,,cafe_investigation_done,alley,,,,FALSE,FALSE,1
+CAFE_EXIT,1,Frog,Ferdinand,Some leads… and some things I could stand to never hear again.,,,,,,FALSE,FALSE,1
+CAFE_EXIT,2,Scorpion,Ernest,Oh?,,,,,,FALSE,FALSE,1
+CAFE_EXIT,3,Frog,Ferdinand,You don't want to know.,,,,,,FALSE,FALSE,1
+CAFE_EXIT,4,Scorpion,Ernest,I see…. Anyone acting strangely?,,,,,,FALSE,FALSE,1
+CAFE_EXIT,5,Frog,Ferdinand,A few. But run of the mill strange or lethally so?,,,,,,FALSE,FALSE,1
+CAFE_EXIT,6,Frog,Ferdinand,I'm not sure what to make of it. Nobody saw the killer. But there were some real oddballs in there. Some a little more aggressive than others… if that's anything to go by.,,,,,,FALSE,FALSE,1
+CAFE_EXIT,7,Scorpion,Ernest,"So what now, then? We don't know where the killer went after he struck. Suspects, but no proof. Evidence, but we're missing the biggest one of all - the victim himself.",,,,,,FALSE,FALSE,1
+CAFE_EXIT,8,Frog,Ferdinand,"Suppose we should head back to the office, then. We've not much to go on, and it's late. We'll work the rest out tomorrow.",,,,,,FALSE,FALSE,1
+CAFE_EXIT,9,Scorpion,Ernest,You're right. A good night's rest will do us both wonders.,,,,,,FALSE,FALSE,1
+LAMP_1,0,Lamp,Lamp,"A single, solitary streetlight. Many others like it, but this one is special. Its glow shines brighter than its peers, eclipsing its fellows with the power of its 80W SMD high-powered single colour semiconductor LED bulb. That's a lot of adjectives. It's quite proud of that.",,,alley,,lamp_interactable,,FALSE,FALSE,1
+LAMP_1,1,Lamp,Lamp,"So many feet have walked the cobbled stones that it spends every ounce of its wattage illuminating, but even our main characters cannot do much but stop and stare in awe at the splendour of this one, ordinary becoming extraordinary...",,,,,,FALSE,FALSE,1
+LAMP_2,0,Lamp,Lamp,"It's strange, but it almost seems like this ordinary streetlight looks…. proud of itself?",,,alley,lamp_interacted_1,lamp_interactable,,FALSE,FALSE,1
+LAMP_3,0,Lamp,Lamp,Stop conversing with the infrastructure. You have a case to solve.,,,alley,lamp_interacted_2,lamp_interactable,,FALSE,FALSE,1
+LAMP_4,0,Lamp,Lamp,"I see you, player. Your hopes, your dreams. You cannot hide from the all-seeing eye of Lamp. What is it that you seek? Does ordinary life bore you, that you seek companionship in the mundane inventions of a people who no longer interest you?",,,alley,lamp_interacted_3,lamp_interactable,,FALSE,FALSE,1
+LAMP_4,1,Lamp,Lamp,"One day, you'll look back on this conversation, and ask yourself…. What did I learn, from my incessant clicking? No, I'm not being rude. I'm tired. Go away.",,,,,,FALSE,FALSE,1
+LAMP_4,2,Scorpion,Ernest,Blasted light. That one never works right.,,,,,,TRUE,FALSE,1
+RECEIPT_FOUND,0,Scorpion,Ernest,What's that?,,lamp_interacted_4,alley,,,,FALSE,FALSE,1
+RECEIPT_INTERACT,0,Frog,Ferdinand,This looks like the receipts they have at the cafe.,,,alley,,receipt_interactable,,FALSE,FALSE,1
+RECEIPT_INTERACT,1,Scorpion,Ernest,And the blood…. So our killer WAS there. And he headed in this direction. To the sewers I assume. We don't have time to waste.,,,,,,FALSE,FALSE,1
+RECEIPT_INTERACT,2,Frog,Ferdinand,You're right. Whoever it was may even still be there. I should head back and see if I can apprehend them.,,,,,,FALSE,FALSE,1
+RECEIPT_INTERACT,3,Scorpion,Ernest,Alone?,,,,,,FALSE,FALSE,1
+RECEIPT_INTERACT,4,Frog,Ferdinand,They won't strike so openly again.,,,,,,FALSE,FALSE,1
+RECEIPT_INTERACT,5,Scorpion,Ernest,"Be safe, Ferd. I'll stay here and make sure we have all our evidence in one place.",,,,,,FALSE,FALSE,1
+OFFICE_ENTER,0,Scorpion,Ernest,This is it. One last clue. One final piece of the puzzle.,,receipt_found,office,,,,TRUE,FALSE,1
+CRASH_SOUND,0,Scorpion,Ernest,What was that? I could have sworn there was a clatter just now.,,deduction_complete,office,,,,TRUE,FALSE,1
+CRASH_SOUND,1,Scorpion,Ernest,I'd better investigate.,,,,,,FALSE,FALSE,1
+SEWER_ENTER,0,Narrator,,"The light here is dim, and the smell of damp is pervasive. This place is unsettling.",,,sewers,,,,FALSE,FALSE,1
+SEWER_ENTER,1,Scorpion,Ernest,Was that a flash of red?,,,,,,TRUE,FALSE,1
+SEWER_ENTER,2,Scorpion,Ernest,Who's there?,,,,,,FALSE,FALSE,1
+SEWER_ENTER,3,Narrator,,"There was no reply, save for the trickle of water running through the canal, and the steady drip-drip-drip of water falling from the ceiling.",,,,,,,FALSE,FALSE,1
+SEWER_ENTER,4,Scorpion,Ernest,Hello?,,,,,,FALSE,FALSE,1
+SEWER_ENTER,5,Narrator,,"Once again, silence. The track stops at a dead end, with only a dimly lit tunnel branching off to the side. Only one way to go - forward.",,,,,,,FALSE,FALSE,1
+CATACOMBS_ENTER,0,Scorpion,Ernest,Empty? But I could have sworn I saw someone… what's this?,,,catacombs,,,,FALSE,FALSE,1
+PHOTO_INTERACT,0,Scorpion,Ernest,That's the sweet little girl I remember from the hospital all those years ago. A tragedy how she passed... but that person next to her I can't quite make them out. Why is this here?,,,catacombs,,photo_interactable,,FALSE,FALSE,1
+CONFRONTATION,0,Frog,Ferdinand,Look familiar?,,photo_interacted,catacombs,,,,FALSE,FALSE,1
+CONFRONTATION,1,Narrator,,Ernest spins around only to JUST barely dodge a hammer swing straight to the skull.,,,,,,,FALSE,FALSE,1
+CONFRONTATION,2,Scorpion,Ernest,What on earth are you doing?,,,,,,FALSE,FALSE,1
+CONFRONTATION,3,Frog,Ferdinand,"Oh, my sweet partner. Isn't it obvious?",,,,,,FALSE,FALSE,1
+CONFRONTATION,4,Narrator,,"Ferdinand swings again, but our hero, despite his poor vision, dances around.",,,,,,FALSE,FALSE,1
+CONFRONTATION,5,Scorpion,Ernest,No. Do enlighten me.,,,,,,FALSE,FALSE,1
+CONFRONTATION,6,Frog,Ferdinand,"It's cold outside, you know.... The perfect temperature for a dish I've been preparing for a long, long time.",,,,,,FALSE,FALSE,1
+CONFRONTATION,7,Frog,Ferdinand,Revenge.,,,,,,FALSE,FALSE,1
+CONFRONTATION,8,Narrator,,"Our valiant detective weaves, once again, but is spun off balance by a swing to his side.",,,,,,FALSE,FALSE,1
+CONFRONTATION,9,Frog,Ferdinand,Why. Won't. You. DIE?,,,,,,FALSE,FALSE,1
+CONFRONTATION,10,Scorpion,Ernest,"What did I ever do to you, Ferd? What is this about?",,,,,,FALSE,FALSE,1
+CONFRONTATION,11,Narrator,,"Croaker's mouth twists into a bitter scowl as he advances, hammer raised.",,,,,,FALSE,FALSE,1
+CONFRONTATION,12,Frog,Ferdinand,"You don't even remember her, do you? The one who died so that you could live. You ROBBED her, and yet you live every day ungrateful for her sacrifice.",,,,,,FALSE,FALSE,1
+CONFRONTATION,13,Scorpion,Ernest,Who?,,,,,,FALSE,FALSE,1
+CONFRONTATION,14,Frog,Ferdinand,My sister.,,,,,,FALSE,FALSE,1
+CONFRONTATION,15,Scorpion,Ernest,"Ferd, I.. I didn't know.",,,,,,FALSE,FALSE,1
+CONFRONTATION,16,Frog,Ferdinand,"Don't play the fool with me. Your parents engineered her death, ensuring you got the heart that was meant for her. So I reaped their lives as payment for hers.",,,,,,FALSE,FALSE,1
+CONFRONTATION,17,Frog,Ferdinand,With interest.,,,,,,FALSE,FALSE,1
+CONFRONTATION,18,Narrator,,"The hammer curves downward in a deadly arc, gleaming dull silver in the dim light. But this time, the P.I is faster. A hiss, a flash of barbed tail, and… it's over.",,,,,,FALSE,FALSE,1
+CONFRONTATION,19,Scorpion,Ernest,"I'm sorry, my friend. It didn't have to be like this.",,,,,,FALSE,FALSE,1
+CONFRONTATION,20,Frog,Ferdinand,I have no regrets. The price for my sister was paid in blood.,,,,,,FALSE,FALSE,1
+CONFRONTATION,21,Scorpion,Ernest,You're deranged.,,,,,,FALSE,FALSE,1
+CONFRONTATION,22,Frog,Ferdinand,What of it?,,,,,,FALSE,FALSE,1
+CONFRONTATION,23,Scorpion,Ernest,I hope you rot.,,,,,,FALSE,FALSE,1
+EPILOGUE,0,Scorpion,Ernest,"It's been a month since I put my best friend behind bars. I suppose it's a relief to finally have closure… but the shock hasn't quite worn off. I'm packing up my practice, I've decided - I just don't think I can do this anymore.",,,epilogue,,,,TRUE,FALSE,1
+EPILOGUE,1,Scorpion,Ernest,Besides I've solved my one big case. It's time… time to move on.,,,,,,TRUE,FALSE,1

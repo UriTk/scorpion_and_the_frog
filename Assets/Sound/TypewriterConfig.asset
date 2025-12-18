@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TypewriterConfig
+  m_EditorClassIdentifier: PointClickDetective:PointClickDetective:TypewriterConfigSO
+  defaultNormal:
+    charactersPerSecond: 30
+    soundInterval: 0.05
+    typingSounds: []
+    pitchRange: {x: 0.95, y: 1.05}
+    volume: 1
+  defaultItalic:
+    charactersPerSecond: 30
+    soundInterval: 0.05
+    typingSounds: []
+    pitchRange: {x: 0.95, y: 1.05}
+    volume: 1
+  defaultBold:
+    charactersPerSecond: 30
+    soundInterval: 0.05
+    typingSounds: []
+    pitchRange: {x: 0.95, y: 1.05}
+    volume: 1
+  defaultBoldItalic:
+    charactersPerSecond: 30
+    soundInterval: 0.05
+    typingSounds: []
+    pitchRange: {x: 0.95, y: 1.05}
+    volume: 1
+  characterSettings:
+  - character: 0
+    normalStyle:
+      charactersPerSecond: 0
+      soundInterval: 0
+      typingSounds: []
+      pitchRange: {x: 0, y: 0}
+      volume: 0
+    italicStyle:
+      charactersPerSecond: 0
+      soundInterval: 0
+      typingSounds: []
+      pitchRange: {x: 0, y: 0}
+      volume: 0
+    boldStyle:
+      charactersPerSecond: 0
+      soundInterval: 0
+      typingSounds: []
+      pitchRange: {x: 0, y: 0}
+      volume: 0
+    boldItalicStyle:
+      charactersPerSecond: 0
+      soundInterval: 0
+      typingSounds: []
+      pitchRange: {x: 0, y: 0}
+      volume: 0
+  - character: 1
+    normalStyle:
+      charactersPerSecond: 0
+      soundInterval: 0
+      typingSounds: []
+      pitchRange: {x: 0, y: 0}
+      volume: 0
+    italicStyle:
+      charactersPerSecond: 0
+      soundInterval: 0
+      typingSounds: []
+      pitchRange: {x: 0, y: 0}
+      volume: 0
+    boldStyle:
+      charactersPerSecond: 0
+      soundInterval: 0
+      typingSounds: []
+      pitchRange: {x: 0, y: 0}
+      volume: 0
+    boldItalicStyle:
+      charactersPerSecond: 0
+      soundInterval: 0
+      typingSounds: []
+      pitchRange: {x: 0, y: 0}
+      volume: 0

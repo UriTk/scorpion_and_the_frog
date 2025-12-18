@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14557d58f52d5fb47bf336c485a118f8, type: 3}
+  m_Name: Clue_07
+  m_EditorClassIdentifier: PointClickDetective::PointClickDetective.ClueSO
+  clueId: clue_07
+  clueNumber: 7
+  clueName: Scorpion remarks that it gets really crowded here in the morning when
+    people are going to work
+  description: It's always so busy here, at the open and close of every day. Everyone
+    goes to work and comes home again, like clockwork. I like to come out here sometimes
+    after the evening rush, to get away from all the people - I prefer it when it's
+    quieter. Easier to think.
+  additionalDescription: The monologue continues with him commenting on different
+    times of day. The evening is similar to the morning with people going home, and
+    he they like the night more, there are less people then. He likes less people
+    because it's more silent
+  icon: {fileID: 4454631428275665778, guid: cc88c81872c09b548a55a60b62facf9c, type: 3}
+  visibleTo: 1
+  visibilityReason: Scorpion
+  locationSceneId: murder_scene
+  relatedQuestionIds: 0c0000000e000000
+  isFakeClue: 0
+  fakeClueExplanation: 

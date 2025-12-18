@@ -472,6 +472,23 @@ namespace PointClickDetective
             RefreshQuestionList();
             UpdateProgress();
             
+            // Set flag on correct
+            if (isCorrect && !string.IsNullOrEmpty(selectedQuestion.setFlagOnCorrect))
+            {
+                GameManager.Instance?.SetFlag(selectedQuestion.setFlagOnCorrect);
+            }
+            
+            // Trigger dialogue on answer (close board first so dialogue shows)
+            DialogueSequenceSO dialogueToPlay = isCorrect 
+                ? selectedQuestion.dialogueOnCorrect 
+                : selectedQuestion.dialogueOnWrong;
+            
+            if (dialogueToPlay != null)
+            {
+                // Delay slightly so feedback shows first
+                StartCoroutine(PlayDialogueAfterDelay(dialogueToPlay, 0.5f));
+            }
+            
             // Check if all questions answered correctly
             if (AnsweredCorrectly == TotalQuestions)
             {
@@ -479,6 +496,18 @@ namespace PointClickDetective
             }
             
             Debug.Log($"[DeductionBoardUI] Answered Q{selectedQuestion.questionId}: {answer} - {(isCorrect ? "CORRECT" : "INCORRECT")}");
+        }
+        
+        private System.Collections.IEnumerator PlayDialogueAfterDelay(DialogueSequenceSO dialogue, float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            
+            // Close board before showing dialogue
+            CloseBoard();
+            
+            yield return null; // Wait a frame
+            
+            DialogueManager.Instance?.ShowDialogueSequence(dialogue);
         }
         
         #endregion

@@ -33,6 +33,17 @@ namespace PointClickDetective
         [Tooltip("Order within category")]
         public int displayOrder;
         
+        [Header("On Correct Answer")]
+        [Tooltip("Dialogue to play when this question is answered correctly")]
+        public DialogueSequenceSO dialogueOnCorrect;
+        
+        [Tooltip("Flag to set when this question is answered correctly")]
+        public string setFlagOnCorrect;
+        
+        [Header("On Wrong Answer")]
+        [Tooltip("Dialogue to play when this question is answered incorrectly")]
+        public DialogueSequenceSO dialogueOnWrong;
+        
         /// <summary>
         /// Check if this question is unlocked (at least one answer is available).
         /// </summary>

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_CRASH_SOUND
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: What was that? I could have sworn there was a clatter just now.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -23,7 +23,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: I'd better investigate.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}

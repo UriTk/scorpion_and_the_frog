@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_CAFE_ENTER_LIN
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 1caa117ca49b0974b9d79655ab769d1b, type: 2}
     text: Hey, Ferd! Fancy seeing you here again. Back for another?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -23,7 +23,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: Not this time, my friend. Here on a case. Got a second?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -33,7 +33,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 1caa117ca49b0974b9d79655ab769d1b, type: 2}
     text: Always got a minute for my best bud! This is Ida.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -43,7 +43,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 8cfc46c905003554f9a28a47e2541c08, type: 2}
     text: Blblblbl. (Nice to meet you.)
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -53,7 +53,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: Don't suppose you saw anything last night, my friend? There was a murder,
       not far from here. We're taking statements.
     setFlagOnShow: 
@@ -64,7 +64,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 1caa117ca49b0974b9d79655ab769d1b, type: 2}
     text: Oh golly, that's awful! No, last night I was a little out of sorts. Drowning
       my sorrows, I guess you could say. *He glances meaningfully at Ida* Weather
       was awful, so you couldn't see much out those windows.
@@ -76,7 +76,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 8cfc46c905003554f9a28a47e2541c08, type: 2}
     text: Blblblb, blblblblbl. Blb.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -86,7 +86,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: Good for him. He's had a rocky love life, that one.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}

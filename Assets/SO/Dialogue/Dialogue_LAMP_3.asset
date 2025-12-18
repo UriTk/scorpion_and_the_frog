@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_LAMP_3
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: Stop conversing with the infrastructure. You have a case to solve.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}

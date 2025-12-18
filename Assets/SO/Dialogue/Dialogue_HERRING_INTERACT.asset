@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_HERRING_INTERACT
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: Ferdinand J. Croaker, P.I. I'd like to ask you a few questions, if you
       don't mind.
     setFlagOnShow: 
@@ -24,7 +24,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 20b09a31d16407f4191736868d7cc7e4, type: 2}
     text: Finley T. Cod, customer. And yes, I do mind. Get lost, why don'tcha?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -34,7 +34,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: Watch your tone. Where were you last night?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -44,7 +44,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 20b09a31d16407f4191736868d7cc7e4, type: 2}
     text: I ain't gotta answer to some cop. Let me finish my drink in peace.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -54,7 +54,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: I'll have you know I'm good cop. But I suggest you answer me, or I might
       have to haul in my associate. And you DON'T want to see him before his evening
       coffee. Gets cranky.
@@ -66,7 +66,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 20b09a31d16407f4191736868d7cc7e4, type: 2}
     text: Whatever. I was here, in the evening. Everyone can vouch for that.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -76,7 +76,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: All night?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -86,7 +86,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 20b09a31d16407f4191736868d7cc7e4, type: 2}
     text: Buzz off. I told you where I was.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: Alright, since you asked so nicely. But I've got my eye on you.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}

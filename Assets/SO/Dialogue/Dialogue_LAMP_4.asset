@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_LAMP_4
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: I see you, player. Your hopes, your dreams. You cannot hide from the all-seeing
       eye of Lamp. What is it that you seek? Does ordinary life bore you, that you
       seek companionship in the mundane inventions of a people who no longer interest

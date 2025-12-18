@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_EPILOGUE
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: "It's been a month since I put my best friend behind bars. I suppose it's
       a relief to finally have closure\u2026 but the shock hasn't quite worn off.
       I'm packing up my practice, I've decided - I just don't think I can do this
@@ -26,7 +26,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: "Besides I've solved my one big case. It's time\u2026 time to move on."
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}

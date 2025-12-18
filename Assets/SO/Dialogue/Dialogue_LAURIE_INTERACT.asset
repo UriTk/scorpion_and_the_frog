@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_LAURIE_INTERACT
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: "Who's that hiding in the shadows? I don't like how she's looking at me.
       It's\u2026 unsettling. Does she know something?"
     setFlagOnShow: 
@@ -24,7 +24,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 5d26992e3bf3589478e5226da0c84e52, type: 2}
     text: Red, red like blood. So much blood there was, and so much more to come
       if he gets his way.
     setFlagOnShow: 
@@ -35,7 +35,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: Er, what was that?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -45,7 +45,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 5d26992e3bf3589478e5226da0c84e52, type: 2}
     text: Rude fellow he was, never once apologized for bumping into poor Laurie.
       Seemed to think himself quite the important gentleman, fancy new outfit and
       all.
@@ -57,7 +57,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: What could that possibly mean? I don't think I'll get much out of her.
       She gives me the creeps.
     setFlagOnShow: 

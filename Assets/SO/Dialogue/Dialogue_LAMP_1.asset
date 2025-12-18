@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_LAMP_1
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: A single, solitary streetlight. Many others like it, but this one is special.
       Its glow shines brighter than its peers, eclipsing its fellows with the power
       of its 80W SMD high-powered single colour semiconductor LED bulb. That's a
@@ -26,7 +26,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: So many feet have walked the cobbled stones that it spends every ounce
       of its wattage illuminating, but even our main characters cannot do much but
       stop and stare in awe at the splendour of this one, ordinary becoming extraordinary...

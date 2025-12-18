@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_CRIME_SCENE_CLUES_DONE
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: "I think we must have picked this place clean twice over, but I'm not seeing\u2026
       well, anything."
     setFlagOnShow: 
@@ -24,7 +24,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: Are you thinking what I am?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -34,7 +34,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: "Yep. Our perp's done a runner. He kills, makes a break for it\u2026 and
       then what?"
     setFlagOnShow: 
@@ -45,7 +45,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: Well, where did he go? I'm willing to bet that a guy who leaves evidence
       lying around like this ain't exactly careful about where he stashes the evidence.
       Let's look around and see what we can dig up.

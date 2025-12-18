@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_CATACOMBS_ENTER
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: "Empty? But I could have sworn I saw someone\u2026 what's this?"
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}

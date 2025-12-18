@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_SEWER_ENTER
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: The light here is dim, and the smell of damp is pervasive. This place is
       unsettling.
     setFlagOnShow: 
@@ -24,7 +24,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: Was that a flash of red?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -34,7 +34,7 @@ MonoBehaviour:
     skipIfFlag: TRUE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: Who's there?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -44,7 +44,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: There was no reply, save for the trickle of water running through the canal,
       and the steady drip-drip-drip of water falling from the ceiling.
     setFlagOnShow: 
@@ -55,7 +55,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: Hello?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -65,7 +65,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: Once again, silence. The track stops at a dead end, with only a dimly lit
       tunnel branching off to the side. Only one way to go - forward.
     setFlagOnShow: 

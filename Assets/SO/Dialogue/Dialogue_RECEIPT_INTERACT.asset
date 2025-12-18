@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_RECEIPT_INTERACT
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: This looks like the receipts they have at the cafe.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -23,7 +23,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: "And the blood\u2026. So our killer WAS there. And he headed in this direction.
       To the sewers I assume. We don't have time to waste."
     setFlagOnShow: 
@@ -34,7 +34,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: You're right. Whoever it was may even still be there. I should head back
       and see if I can apprehend them.
     setFlagOnShow: 
@@ -45,7 +45,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: Alone?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -55,7 +55,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: They won't strike so openly again.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -65,7 +65,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: Be safe, Ferd. I'll stay here and make sure we have all our evidence in
       one place.
     setFlagOnShow: 

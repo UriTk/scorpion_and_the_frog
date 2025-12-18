@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_CONFRONTATION
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: Look familiar?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -23,7 +23,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: Ernest spins around only to JUST barely dodge a hammer swing straight to
       the skull.
     setFlagOnShow: 
@@ -34,7 +34,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: What on earth are you doing?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -44,7 +44,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: Oh, my sweet partner. Isn't it obvious?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -54,7 +54,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: Ferdinand swings again, but our hero, despite his poor vision, dances around.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -64,7 +64,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: No. Do enlighten me.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -74,7 +74,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: It's cold outside, you know.... The perfect temperature for a dish I've
       been preparing for a long, long time.
     setFlagOnShow: 
@@ -85,7 +85,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: Revenge.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -95,7 +95,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: Our valiant detective weaves, once again, but is spun off balance by a
       swing to his side.
     setFlagOnShow: 
@@ -106,7 +106,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: Why. Won't. You. DIE?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -116,7 +116,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: What did I ever do to you, Ferd? What is this about?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -126,7 +126,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: Croaker's mouth twists into a bitter scowl as he advances, hammer raised.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -136,7 +136,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: You don't even remember her, do you? The one who died so that you could
       live. You ROBBED her, and yet you live every day ungrateful for her sacrifice.
     setFlagOnShow: 
@@ -147,7 +147,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: Who?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -157,7 +157,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: My sister.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -167,7 +167,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: Ferd, I.. I didn't know.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -177,7 +177,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: Don't play the fool with me. Your parents engineered her death, ensuring
       you got the heart that was meant for her. So I reaped their lives as payment
       for hers.
@@ -189,7 +189,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: With interest.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -199,7 +199,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: "The hammer curves downward in a deadly arc, gleaming dull silver in the
       dim light. But this time, the P.I is faster. A hiss, a flash of barbed tail,
       and\u2026 it's over."
@@ -211,7 +211,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: I'm sorry, my friend. It didn't have to be like this.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -221,7 +221,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: I have no regrets. The price for my sister was paid in blood.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -231,7 +231,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: You're deranged.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -241,7 +241,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: What of it?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -251,7 +251,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: I hope you rot.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_CRIME_SCENE_ARRIVE
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: Something's not right here.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -23,7 +23,7 @@ MonoBehaviour:
     skipIfFlag: TRUE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: Hey, Ernie? You might want to see this.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -33,7 +33,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: Ernie?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -43,7 +43,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: What is it?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -53,7 +53,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: You seemed a little out of it there. Is everything okay?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -63,7 +63,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: "It's just\u2026. This scene? It reminds me of the day my parents died.
       They told me they never found the bodies\u2026 just bits. A struggle maybe,
       and they were gone. But they never found more than a limb or two, just like
@@ -76,7 +76,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: Want me to cover for you while you take a breather?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -86,7 +86,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: "Don't worry about me. Worry about this guy\u2026. Or what's left of him."
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: We got a name on him?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -106,7 +106,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: Daedalus, last name Doornail. He dropped his wallet, but he wasn't holding
       much. Poor sod was on his way home, I'd assume.
     setFlagOnShow: 
@@ -117,7 +117,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: Well, there must be something that'll give us a "leg" up in this investigation.
       Let's look around, eh?
     setFlagOnShow: 
@@ -128,7 +128,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: "\u2026\u2026.."
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -138,7 +138,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: Sorry.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_PHOTO_INTERACT
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: That's the sweet little girl I remember from the hospital all those years
       ago. A tragedy how she passed... but that person next to her I can't quite
       make them out. Why is this here?

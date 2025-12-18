@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_BARTENDER_INTERACT
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: You see anyone come in last night, around mid evening?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -23,7 +23,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 23144253d7d63414183a1cccf18f004d, type: 2}
     text: After you? No. But that fishy gentleman came in just before you. Wringing
       his hands under the table, looking around all scared, like. Asked for the strongest
       thing I had. None too kindly, either.
@@ -35,7 +35,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 23144253d7d63414183a1cccf18f004d, type: 2}
     text: You think it was someone here?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -45,7 +45,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: It would be an easy place to get to from the crime scene. But we won't
       know for sure unless we catch the bugger.
     setFlagOnShow: 
@@ -56,7 +56,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 23144253d7d63414183a1cccf18f004d, type: 2}
     text: Good luck, Croaker. Bad energy afoot these days.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}

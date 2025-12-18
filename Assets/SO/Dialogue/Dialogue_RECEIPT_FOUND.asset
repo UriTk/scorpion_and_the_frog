@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_RECEIPT_FOUND
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: What's that?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}

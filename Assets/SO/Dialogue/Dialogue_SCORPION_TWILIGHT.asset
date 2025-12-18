@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_SCORPION_TWILIGHT
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: It's quiet tonight. Nice.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -23,7 +23,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: "It gets so busy in the morning, when the city wakes up for work. And again
       at night when they return. I much prefer these twilight hours, when it's a
       little less noisy\u2026 helps me clear my head."

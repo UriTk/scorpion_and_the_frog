@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_ALL_ALLEY_CLUES
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: I think that's all the clues our killer left us, at least here. Little
       careless, isn't he?
     setFlagOnShow: 
@@ -24,7 +24,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: Very.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -34,7 +34,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: We ought to see if anyone saw anything. Shall we?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -44,7 +44,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: After you, Ernie.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}

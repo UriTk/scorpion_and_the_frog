@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_RETURN_CRIME_SCENE
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: Well, we're back where we started. The best vantage point as far as eyewitnesses
       go has got to be somewhere around here.
     setFlagOnShow: 
@@ -24,7 +24,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: I'll tackle the cafe.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -34,7 +34,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: Then I'll stay out here and keep watch. You never know, they come back
       to the scene sometimes - for what reason, I'll never know. This one clearly
       isn't too worried about hiding his tracks.

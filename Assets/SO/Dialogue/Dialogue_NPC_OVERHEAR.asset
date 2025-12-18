@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Dialogue_NPC_OVERHEAR
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
-    text: Hey, funny story last night. I dropped by the Rum'n'Jazz for a buzz - Some
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
+    text: Hey, funny story last night. I dropped by The Mouse Trap for a buzz - Some
       TOTAL stranger comes up and says "Ay Sherry! Come over here and 'ave some drinks
       wiv us. LIVE a little."
     setFlagOnShow: 
@@ -25,7 +25,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: What, like he knew you?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -35,7 +35,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: Somethin like that. Everyone there's a bit heavy on the juice, if you catch
       my drift. Acted like he'd known me my whole life. Nice enough guy, but BOY,
       was he sozzled.
@@ -47,7 +47,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: "Hmm\u2026."
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}

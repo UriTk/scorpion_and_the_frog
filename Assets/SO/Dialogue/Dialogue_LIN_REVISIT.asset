@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_LIN_REVISIT
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 1caa117ca49b0974b9d79655ab769d1b, type: 2}
     text: And THAT'S why I'm never experimenting with mayonnaise again.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -23,7 +23,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 8cfc46c905003554f9a28a47e2541c08, type: 2}
     text: Blb. (Audible disgust)
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}

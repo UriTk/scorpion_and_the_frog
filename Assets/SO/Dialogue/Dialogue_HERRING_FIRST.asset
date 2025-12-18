@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_HERRING_FIRST
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 20b09a31d16407f4191736868d7cc7e4, type: 2}
     text: Hey, barkeep. Another.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 11400000, guid: 9984448fc1c688d4588d2d7e3867474b, type: 2}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_OFFICE_ENTER
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: This is it. One last clue. One final piece of the puzzle.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}

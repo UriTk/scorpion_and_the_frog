@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dialogue_CAFE_EXIT
   m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
   lines:
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: Anything useful?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -23,7 +23,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: "Some leads\u2026 and some things I could stand to never hear again."
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -33,7 +33,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: Oh?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -43,7 +43,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: You don't want to know.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -53,7 +53,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: "I see\u2026. Anyone acting strangely?"
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -63,7 +63,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: A few. But run of the mill strange or lethally so?
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
@@ -73,7 +73,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: "I'm not sure what to make of it. Nobody saw the killer. But there were
       some real oddballs in there. Some a little more aggressive than others\u2026
       if that's anything to go by."
@@ -85,7 +85,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: So what now, then? We don't know where the killer went after he struck.
       Suspects, but no proof. Evidence, but we're missing the biggest one of all
       - the victim himself.
@@ -97,7 +97,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: Suppose we should head back to the office, then. We've not much to go on,
       and it's late. We'll work the rest out tomorrow.
     setFlagOnShow: 
@@ -108,7 +108,7 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
-  - speaker: {fileID: 0}
+  - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
     text: You're right. A good night's rest will do us both wonders.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}

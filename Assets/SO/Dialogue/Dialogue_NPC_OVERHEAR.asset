@@ -49,7 +49,7 @@ MonoBehaviour:
     delayBefore: 0
   - speaker: {fileID: 11400000, guid: 10aff558c23cab245aa23fa4403cb403, type: 2}
     text: "Hmm\u2026."
-    setFlagOnShow: 
+    setFlagOnShow: club_unlock
     discoverClueOnShow: {fileID: 0}
     revealQuestionOnShow: {fileID: 0}
     requiresFlag: 
@@ -58,5 +58,7 @@ MonoBehaviour:
     triggerSceneChange: 
     delayBefore: 0
   setFlagOnComplete: 
+  removeFlagOnComplete: 
   discoverClueOnComplete: {fileID: 0}
   revealQuestionOnComplete: {fileID: 0}
+  triggerSceneChangeOnComplete: 

@@ -1504,21 +1504,69 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1550231247}
     m_Modifications:
+    - target: {fileID: 45203600498966970, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
+      propertyPath: m_Size.x
+      value: 19.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 45203600498966970, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
+      propertyPath: m_Size.y
+      value: 10.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 45203600498966970, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6c81fdcdc26cb744383b850c279c0ce1, type: 3}
+    - target: {fileID: 45203600498966970, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120754551568745121, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120754551568745121, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120754551568745121, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
+      propertyPath: m_Offset.x
+      value: 4.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120754551568745121, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
+      propertyPath: m_Offset.y
+      value: -2.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120754551568745121, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 19.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120754551568745121, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 10.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120754551568745121, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 19.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120754551568745121, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 10.8
+      objectReference: {fileID: 0}
     - target: {fileID: 3141850131280819996, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.2869
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3141850131280819996, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.296
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3141850131280819996, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.64
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3141850131280819996, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.09
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3141850131280819996, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1554,7 +1602,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4625910344660670609, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
       propertyPath: m_Name
-      value: Crowd? Probably dialogue
+      value: Cigs
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786141058926187145, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
+      propertyPath: scorpionData.lookAtDialogue
+      value: It's always so busy here, at the opening and closing of every day. Everyone
+        goes to work and comes home again, like clockwork. I like to come out here
+        sometimes after the evening rush, to get away from all the people - I prefer
+        it when it's quieter. Easier to think.
       objectReference: {fileID: 0}
     - target: {fileID: 4786141058926187145, guid: 91553f47f7ff5fd4e99aaa63de81270a, type: 3}
       propertyPath: scorpionData.unlockFlagOnLook
@@ -1979,13 +2034,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1550231247}
     m_Modifications:
+    - target: {fileID: 337245086687995232, guid: 187a09b793180604991f447fc59a6be1, type: 3}
+      propertyPath: m_Size.x
+      value: 5.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 337245086687995232, guid: 187a09b793180604991f447fc59a6be1, type: 3}
+      propertyPath: m_Size.y
+      value: 3.7
+      objectReference: {fileID: 0}
     - target: {fileID: 1696814859795277058, guid: 187a09b793180604991f447fc59a6be1, type: 3}
       propertyPath: m_Name
       value: Snow
       objectReference: {fileID: 0}
     - target: {fileID: 3343136143490174724, guid: 187a09b793180604991f447fc59a6be1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3198
+      value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: 3343136143490174724, guid: 187a09b793180604991f447fc59a6be1, type: 3}
       propertyPath: m_LocalScale.y
@@ -1993,11 +2056,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3343136143490174724, guid: 187a09b793180604991f447fc59a6be1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.71
+      value: 5.79
       objectReference: {fileID: 0}
     - target: {fileID: 3343136143490174724, guid: 187a09b793180604991f447fc59a6be1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.77
+      value: -1.11
       objectReference: {fileID: 0}
     - target: {fileID: 3343136143490174724, guid: 187a09b793180604991f447fc59a6be1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6298,9 +6361,26 @@ PrefabInstance:
       propertyPath: belongsToSceneId
       value: club_ext
       objectReference: {fileID: 0}
+    - target: {fileID: 3623491758644671823, guid: a3aeee112b160a1469d3e78dc7e6885f, type: 3}
+      propertyPath: frogData.clueOnLook
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623491758644671823, guid: a3aeee112b160a1469d3e78dc7e6885f, type: 3}
+      propertyPath: frogData.lookAtDialogue
+      value: A sign. Its instructions are pretty clear - NO! The rest is chicken
+        scratch to me.
+      objectReference: {fileID: 0}
     - target: {fileID: 4849847554142186807, guid: a3aeee112b160a1469d3e78dc7e6885f, type: 3}
       propertyPath: m_Name
       value: No entry
+      objectReference: {fileID: 0}
+    - target: {fileID: 4994344565943399070, guid: a3aeee112b160a1469d3e78dc7e6885f, type: 3}
+      propertyPath: m_Size.x
+      value: 1.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 4994344565943399070, guid: a3aeee112b160a1469d3e78dc7e6885f, type: 3}
+      propertyPath: m_Size.y
+      value: 2.7
       objectReference: {fileID: 0}
     - target: {fileID: 6973186113320474202, guid: a3aeee112b160a1469d3e78dc7e6885f, type: 3}
       propertyPath: m_LocalScale.x
@@ -6312,11 +6392,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6973186113320474202, guid: a3aeee112b160a1469d3e78dc7e6885f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.36
+      value: -1.77
       objectReference: {fileID: 0}
     - target: {fileID: 6973186113320474202, guid: a3aeee112b160a1469d3e78dc7e6885f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.7822
+      value: -0.85
       objectReference: {fileID: 0}
     - target: {fileID: 6973186113320474202, guid: a3aeee112b160a1469d3e78dc7e6885f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9204,7 +9284,7 @@ MonoBehaviour:
   description: 
   mapIcon: {fileID: 0}
   startsLocked: 1
-  unlockFlagName: club
+  unlockFlagName: club_unlock
   firstVisitDialogue: {fileID: 0}
   firstVisitRequiresFlag: 
   scorpionEntryDialogue: {fileID: 0}
@@ -14526,7 +14606,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 2560255934777765170, guid: d66fa070b72dc734fb33a11cf75b58d1, type: 3}
+  m_Sprite: {fileID: 7082171076297926052, guid: 6b6bb9120fe46db45bbfdd033c943660, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

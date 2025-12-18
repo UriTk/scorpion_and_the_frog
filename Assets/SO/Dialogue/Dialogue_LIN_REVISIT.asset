@@ -45,7 +45,7 @@ MonoBehaviour:
     delayBefore: 0
   - speaker: {fileID: 0}
     text: So that should be everyone here.
-    setFlagOnShow: 
+    setFlagOnShow: cafe_int_disable
     discoverClueOnShow: {fileID: 0}
     revealQuestionOnShow: {fileID: 0}
     requiresFlag: 
@@ -54,6 +54,7 @@ MonoBehaviour:
     triggerSceneChange: cafe_ext
     delayBefore: 0
   setFlagOnComplete: 
+  removeFlagOnComplete: 
   discoverClueOnComplete: {fileID: 0}
   revealQuestionOnComplete: {fileID: 0}
   triggerSceneChangeOnComplete: 

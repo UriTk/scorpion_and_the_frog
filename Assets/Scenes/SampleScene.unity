@@ -683,6 +683,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blood 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6406838823292875591, guid: 49c6eaca2e1f3014a81161a54c4c74ef, type: 3}
+      propertyPath: belongsToSceneId
+      value: city
+      objectReference: {fileID: 0}
+    - target: {fileID: 6406838823292875591, guid: 49c6eaca2e1f3014a81161a54c4c74ef, type: 3}
+      propertyPath: frogData.unlockFlagOnLook
+      value: city1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -949,9 +957,21 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4382488390910547523, guid: 0aa73e9cce656264cb0b9e21d6ef7a0a, type: 3}
+      propertyPath: belongsToSceneId
+      value: city
+      objectReference: {fileID: 0}
+    - target: {fileID: 4382488390910547523, guid: 0aa73e9cce656264cb0b9e21d6ef7a0a, type: 3}
       propertyPath: frogData.lookAtDialogue
       value: A knife, red like the blood splattered on the snow! Is this the real
         murder weapon, I wonder?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4382488390910547523, guid: 0aa73e9cce656264cb0b9e21d6ef7a0a, type: 3}
+      propertyPath: frogData.unlockFlagOnLook
+      value: city4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4382488390910547523, guid: 0aa73e9cce656264cb0b9e21d6ef7a0a, type: 3}
+      propertyPath: frogData.conditionalDialogues.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4566735837492548541, guid: 0aa73e9cce656264cb0b9e21d6ef7a0a, type: 3}
       propertyPath: m_Size.x
@@ -1122,7 +1142,7 @@ MonoBehaviour:
     targetSceneId: 
     unlockFlagOnLook: 
     unlockFlagOnInteract: 
-  belongsToSceneId: 
+  belongsToSceneId: cafe_ext
   OnLookedAt:
     m_PersistentCalls:
       m_Calls: []
@@ -1357,6 +1377,14 @@ PrefabInstance:
     - target: {fileID: 9172442248521983269, guid: 11120e312680294459200618627282db, type: 3}
       propertyPath: belongsToSceneId
       value: city
+      objectReference: {fileID: 0}
+    - target: {fileID: 9172442248521983269, guid: 11120e312680294459200618627282db, type: 3}
+      propertyPath: frogData.unlockFlagOnLook
+      value: city3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9172442248521983269, guid: 11120e312680294459200618627282db, type: 3}
+      propertyPath: scorpionData.unlockFlagOnLook
+      value: city3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2004,6 +2032,7 @@ GameObject:
   m_Component:
   - component: {fileID: 283712678}
   - component: {fileID: 283712679}
+  - component: {fileID: 283712680}
   m_Layer: 0
   m_Name: City
   m_TagString: Untagged
@@ -2076,6 +2105,28 @@ MonoBehaviour:
   OnSceneExit:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &283712680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283712677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 964742bd51320134f9799cc0248e3362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PointClickDetective::PointClickDetective.FlagTriggerDialogue
+  requiredFlags:
+  - city1
+  - city2
+  - city3
+  - city4
+  dialogueToTrigger: {fileID: 11400000, guid: 0b6b3cb2af9363845b611e594c12012a, type: 2}
+  triggerOnce: 1
+  triggeredFlag: 
+  triggerDelay: 0.1
+  pollEveryFrame: 0
 --- !u!1 &294988637
 GameObject:
   m_ObjectHideFlags: 0
@@ -4219,19 +4270,19 @@ MonoBehaviour:
   locations:
   - button: {fileID: 2130784921}
     targetSceneId: alley
-    requiredFlag: 
+    requiredFlag: alley
   - button: {fileID: 1299857968}
     targetSceneId: cafe_ext
-    requiredFlag: 
+    requiredFlag: cafe_ext
   - button: {fileID: 4160256}
     targetSceneId: office
     requiredFlag: 
   - button: {fileID: 366428870}
     targetSceneId: club
-    requiredFlag: 
+    requiredFlag: club
   - button: {fileID: 894372073}
     targetSceneId: catacombs
-    requiredFlag: 
+    requiredFlag: catacombs
   - button: {fileID: 1957785121}
     targetSceneId: sewer
     requiredFlag: sewer
@@ -6453,8 +6504,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1792358087}
   m_HandleRect: {fileID: 1792358086}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0.9999085
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7376,6 +7427,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &988189889 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6104471392160083274, guid: cea0190bb7bd9284bafc5d80cb3dfef0, type: 3}
+  m_PrefabInstance: {fileID: 2134376098}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1002726022
 GameObject:
   m_ObjectHideFlags: 0
@@ -8216,7 +8272,7 @@ MonoBehaviour:
     targetSceneId: 
     unlockFlagOnLook: 
     unlockFlagOnInteract: 
-  belongsToSceneId: 
+  belongsToSceneId: cafe_ext
   OnLookedAt:
     m_PersistentCalls:
       m_Calls: []
@@ -9012,8 +9068,8 @@ MonoBehaviour:
   displayName: 
   description: 
   mapIcon: {fileID: 0}
-  startsLocked: 0
-  unlockFlagName: 
+  startsLocked: 1
+  unlockFlagName: club
   firstVisitDialogue: {fileID: 0}
   firstVisitRequiresFlag: 
   scorpionEntryDialogue: {fileID: 0}
@@ -9480,6 +9536,8 @@ Transform:
   - {fileID: 2083132747}
   - {fileID: 1007646764}
   - {fileID: 1906571534}
+  - {fileID: 1585843747}
+  - {fileID: 988189889}
   m_Father: {fileID: 1289181462}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1287305552
@@ -9514,7 +9572,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.03098395}
+  m_AnchoredPosition: {x: 0, y: -0.000024865714}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1289181461
@@ -9533,7 +9591,6 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
   m_IsActive: 1
 --- !u!4 &1289181462
 Transform:
@@ -9568,8 +9625,8 @@ MonoBehaviour:
   displayName: Alley
   description: The office of the Scorpion & Frog detective.
   mapIcon: {fileID: 0}
-  startsLocked: 0
-  unlockFlagName: 
+  startsLocked: 1
+  unlockFlagName: allye
   firstVisitDialogue: {fileID: 0}
   firstVisitRequiresFlag: 
   scorpionEntryDialogue: {fileID: 0}
@@ -11010,7 +11067,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
-  m_IsActive: 0
 --- !u!4 &1537118189
 Transform:
   m_ObjectHideFlags: 0
@@ -11487,6 +11543,10 @@ PrefabInstance:
     - target: {fileID: 4274447086755700564, guid: 187a09b793180604991f447fc59a6be1, type: 3}
       propertyPath: belongsToSceneId
       value: city
+      objectReference: {fileID: 0}
+    - target: {fileID: 4274447086755700564, guid: 187a09b793180604991f447fc59a6be1, type: 3}
+      propertyPath: scorpionData.unlockFlagOnLook
+      value: city2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12344,8 +12404,8 @@ MonoBehaviour:
   displayName: 
   description: 
   mapIcon: {fileID: 0}
-  startsLocked: 0
-  unlockFlagName: 
+  startsLocked: 1
+  unlockFlagName: cafe_ext
   firstVisitDialogue: {fileID: 11400000, guid: bd7b14f1bfb7c2f499f67d62c82b66e9, type: 2}
   firstVisitRequiresFlag: 
   scorpionEntryDialogue: {fileID: 0}
@@ -13228,7 +13288,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -692078636420456154, guid: 933e9c7e80cc1c34da37b494a3dbcbbd, type: 3}
-  m_Sprite: {fileID: -692078636420456154, guid: 933e9c7e80cc1c34da37b494a3dbcbbd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13691,6 +13750,10 @@ PrefabInstance:
       propertyPath: belongsToSceneId
       value: city
       objectReference: {fileID: 0}
+    - target: {fileID: 6406838823292875591, guid: 49c6eaca2e1f3014a81161a54c4c74ef, type: 3}
+      propertyPath: frogData.unlockFlagOnLook
+      value: city1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13780,7 +13843,7 @@ MonoBehaviour:
     targetSceneId: 
     unlockFlagOnLook: 
     unlockFlagOnInteract: 
-  belongsToSceneId: 
+  belongsToSceneId: alley
   OnLookedAt:
     m_PersistentCalls:
       m_Calls: []

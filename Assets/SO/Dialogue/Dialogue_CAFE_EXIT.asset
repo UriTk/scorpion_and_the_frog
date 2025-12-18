@@ -119,6 +119,7 @@ MonoBehaviour:
     triggerSceneChange: 
     delayBefore: 0
   setFlagOnComplete: 
+  removeFlagOnComplete: map_globally_locked
   discoverClueOnComplete: {fileID: 0}
   revealQuestionOnComplete: {fileID: 0}
   triggerSceneChangeOnComplete: 

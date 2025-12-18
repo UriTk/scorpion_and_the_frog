@@ -26,7 +26,7 @@ MonoBehaviour:
     delayBefore: 0
   - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
     text: I'll tackle the cafe.
-    setFlagOnShow: 
+    setFlagOnShow: map_globally_locked
     discoverClueOnShow: {fileID: 0}
     revealQuestionOnShow: {fileID: 0}
     requiresFlag: 
@@ -47,5 +47,7 @@ MonoBehaviour:
     triggerSceneChange: 
     delayBefore: 0
   setFlagOnComplete: 
+  removeFlagOnComplete: 
   discoverClueOnComplete: {fileID: 0}
   revealQuestionOnComplete: {fileID: 0}
+  triggerSceneChangeOnComplete: 

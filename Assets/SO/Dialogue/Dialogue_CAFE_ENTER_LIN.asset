@@ -96,6 +96,7 @@ MonoBehaviour:
     skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
-  setFlagOnComplete: 
+  setFlagOnComplete: Lin
   discoverClueOnComplete: {fileID: 0}
   revealQuestionOnComplete: {fileID: 0}
+  triggerSceneChangeOnComplete: 

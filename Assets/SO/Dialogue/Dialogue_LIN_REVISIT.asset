@@ -34,7 +34,7 @@ MonoBehaviour:
     triggerSceneChange: 
     delayBefore: 0
   - speaker: {fileID: 0}
-    text: Hm... Nobody came after me.
+    text: Hm... Nobody came into the cafe after me.
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
     revealQuestionOnShow: {fileID: 0}
@@ -51,8 +51,9 @@ MonoBehaviour:
     requiresFlag: 
     requiresClue: {fileID: 0}
     skipIfFlag: FALSE
-    triggerSceneChange: 
+    triggerSceneChange: cafe_ext
     delayBefore: 0
   setFlagOnComplete: 
   discoverClueOnComplete: {fileID: 0}
   revealQuestionOnComplete: {fileID: 0}
+  triggerSceneChangeOnComplete: 

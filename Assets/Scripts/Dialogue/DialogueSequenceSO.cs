@@ -19,6 +19,9 @@ namespace PointClickDetective
         
         [Tooltip("Question to reveal when this entire sequence completes")]
         public QuestionSO revealQuestionOnComplete;
+        
+        [Tooltip("Scene to change to when this entire sequence completes (after dialogue closes)")]
+        public string triggerSceneChangeOnComplete;
     }
     
     [System.Serializable]

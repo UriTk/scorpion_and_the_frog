@@ -31,7 +31,7 @@ MonoBehaviour:
     revealQuestionOnShow: {fileID: 0}
     requiresFlag: 
     requiresClue: {fileID: 0}
-    skipIfFlag: FALSE
+    skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
   - speaker: {fileID: 11400000, guid: 45d55721a5d21054e95ed6426ca7e850, type: 2}
@@ -41,7 +41,7 @@ MonoBehaviour:
     revealQuestionOnShow: {fileID: 0}
     requiresFlag: 
     requiresClue: {fileID: 0}
-    skipIfFlag: FALSE
+    skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
   - speaker: {fileID: 11400000, guid: eb9f7a23b526f2a41b962076df791dbe, type: 2}
@@ -51,9 +51,10 @@ MonoBehaviour:
     revealQuestionOnShow: {fileID: 0}
     requiresFlag: 
     requiresClue: {fileID: 0}
-    skipIfFlag: FALSE
+    skipIfFlag: 
     triggerSceneChange: 
     delayBefore: 0
   setFlagOnComplete: 
   discoverClueOnComplete: {fileID: 0}
   revealQuestionOnComplete: {fileID: 0}
+  triggerSceneChangeOnComplete: 

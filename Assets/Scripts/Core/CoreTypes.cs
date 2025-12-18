@@ -64,17 +64,20 @@ namespace PointClickDetective
         /// <summary>
         /// Get the first matching conditional dialogue, or null if none match.
         /// </summary>
-        public ConditionalDialogue GetMatchingConditionalDialogue()
+        public ConditionalDialogue GetMatchingConditionalDialogue(string objectId = null)
         {
             if (conditionalDialogues == null || conditionalDialogues.Length == 0)
                 return null;
             
+            Debug.Log($"[CharacterInteractionData] Checking {conditionalDialogues.Length} conditional dialogues for {objectId}");
+            
             foreach (var cd in conditionalDialogues)
             {
-                if (cd.ShouldShow())
+                if (cd.ShouldShow(objectId))
                     return cd;
             }
             
+            Debug.Log($"[CharacterInteractionData] No conditional dialogue matched, using fallback");
             return null;
         }
     }
@@ -85,6 +88,10 @@ namespace PointClickDetective
         [Header("Dialogue")]
         [Tooltip("The dialogue sequence to play")]
         public DialogueSequenceSO dialogue;
+        
+        [Header("Play Once")]
+        [Tooltip("If true, this dialogue only plays once ever (auto-generates skip flag)")]
+        public bool playOnce = false;
         
         [Header("Conditions (ALL must be met)")]
         [Tooltip("Only show if this flag IS set (leave empty to ignore)")]
@@ -106,50 +113,91 @@ namespace PointClickDetective
         [Tooltip("Clue to discover after this dialogue plays")]
         public ClueSO discoverClueAfter;
         
+        // Runtime ID for playOnce
+        [System.NonSerialized] private string _cachedPlayOnceFlag;
+        
+        /// <summary>
+        /// Get unique flag name for playOnce.
+        /// </summary>
+        public string GetPlayOnceFlag(string objectId)
+        {
+            if (dialogue == null) return null;
+            return $"played_{objectId}_{dialogue.name}";
+        }
+        
         /// <summary>
         /// Check if this conditional dialogue should show.
         /// </summary>
-        public bool ShouldShow()
+        public bool ShouldShow(string objectId = null)
         {
+            // Check playOnce
+            if (playOnce && !string.IsNullOrEmpty(objectId))
+            {
+                string playOnceFlag = GetPlayOnceFlag(objectId);
+                if (GameManager.Instance != null && GameManager.Instance.HasFlag(playOnceFlag))
+                {
+                    Debug.Log($"[ConditionalDialogue] Skipping (playOnce already played): {dialogue?.name}");
+                    return false;
+                }
+            }
+            
             // Check requires flag
             if (!string.IsNullOrEmpty(requiresFlag))
             {
-                if (GameManager.Instance == null || !GameManager.Instance.HasFlag(requiresFlag))
+                bool hasFlag = GameManager.Instance != null && GameManager.Instance.HasFlag(requiresFlag);
+                Debug.Log($"[ConditionalDialogue] Checking requiresFlag '{requiresFlag}': {hasFlag}");
+                if (!hasFlag)
                     return false;
             }
             
             // Check requires clue
             if (requiresClue != null)
             {
-                if (ClueManager.Instance == null || !ClueManager.Instance.HasClue(requiresClue))
+                bool hasClue = ClueManager.Instance != null && ClueManager.Instance.HasClue(requiresClue);
+                Debug.Log($"[ConditionalDialogue] Checking requiresClue '{requiresClue.name}': {hasClue}");
+                if (!hasClue)
                     return false;
             }
             
             // Check skip flag
             if (!string.IsNullOrEmpty(skipIfFlag))
             {
-                if (GameManager.Instance != null && GameManager.Instance.HasFlag(skipIfFlag))
+                bool hasFlag = GameManager.Instance != null && GameManager.Instance.HasFlag(skipIfFlag);
+                Debug.Log($"[ConditionalDialogue] Checking skipIfFlag '{skipIfFlag}': {hasFlag}");
+                if (hasFlag)
                     return false;
             }
             
             // Check skip clue
             if (skipIfClue != null)
             {
-                if (ClueManager.Instance != null && ClueManager.Instance.HasClue(skipIfClue))
+                bool hasClue = ClueManager.Instance != null && ClueManager.Instance.HasClue(skipIfClue);
+                Debug.Log($"[ConditionalDialogue] Checking skipIfClue '{skipIfClue.name}': {hasClue}");
+                if (hasClue)
                     return false;
             }
             
+            Debug.Log($"[ConditionalDialogue] MATCH: {dialogue?.name}");
             return true;
         }
         
         /// <summary>
-        /// Execute after-show effects (set flag, discover clue).
+        /// Execute after-show effects (set flag, discover clue, mark playOnce).
         /// </summary>
-        public void ExecuteAfterEffects()
+        public void ExecuteAfterEffects(string objectId = null)
         {
+            // Mark playOnce
+            if (playOnce && !string.IsNullOrEmpty(objectId))
+            {
+                string playOnceFlag = GetPlayOnceFlag(objectId);
+                GameManager.Instance?.SetFlag(playOnceFlag);
+                Debug.Log($"[ConditionalDialogue] Set playOnce flag: {playOnceFlag}");
+            }
+            
             if (!string.IsNullOrEmpty(setFlagAfter))
             {
                 GameManager.Instance?.SetFlag(setFlagAfter);
+                Debug.Log($"[ConditionalDialogue] Set flag: {setFlagAfter}");
             }
             
             if (discoverClueAfter != null)

@@ -315,7 +315,9 @@ namespace PointClickDetective
         
         public bool HasFlag(string flagName)
         {
-            return gameFlags.Contains(flagName);
+            bool has = gameFlags.Contains(flagName);
+            Debug.Log($"[GameManager] HasFlag('{flagName}'): {has}");
+            return has;
         }
         
         public void RemoveFlag(string flagName)

@@ -24,7 +24,18 @@ MonoBehaviour:
     triggerSceneChange: 
     delayBefore: 0
   - speaker: {fileID: 0}
-    text: '[Press M to open your map.]'
+    text: '[Press M to open your map and J to open your journal. You can also press
+      Spacebar to switch characters.]'
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: 
+    triggerSceneChange: 
+    delayBefore: 0
+  - speaker: {fileID: 0}
+    text: 
     setFlagOnShow: 
     discoverClueOnShow: {fileID: 0}
     revealQuestionOnShow: {fileID: 0}
@@ -36,3 +47,4 @@ MonoBehaviour:
   setFlagOnComplete: 
   discoverClueOnComplete: {fileID: 11400000, guid: 34728e61bcfd39c4d944886b083f4e25, type: 2}
   revealQuestionOnComplete: {fileID: 0}
+  triggerSceneChangeOnComplete: 

@@ -21,9 +21,10 @@ MonoBehaviour:
     revealQuestionOnShow: {fileID: 0}
     requiresFlag: 
     requiresClue: {fileID: 0}
-    skipIfFlag: 
+    skipIfFlag: seen_snow
     triggerSceneChange: 
     delayBefore: 0
-  setFlagOnComplete: 
+  setFlagOnComplete: seen_snow
   discoverClueOnComplete: {fileID: 0}
   revealQuestionOnComplete: {fileID: 0}
+  triggerSceneChangeOnComplete: 

@@ -162,13 +162,52 @@ namespace PointClickDetective
             
             InteractionResult result = target.LookAt();
             
+            Debug.Log($"[InteractionManager] PerformLookAt result: dialogueSequence={result.dialogueSequence}, dialogue='{result.dialogue}', sceneChange={result.triggeredSceneChange}, targetScene={result.targetSceneId}");
+            
+            // Store pending scene change (will execute after dialogue ends)
+            string pendingSceneChange = null;
+            if (result.triggeredSceneChange && !string.IsNullOrEmpty(result.targetSceneId))
+            {
+                pendingSceneChange = result.targetSceneId;
+            }
+            
             if (result.dialogueSequence != null)
             {
+                Debug.Log($"[InteractionManager] Calling ShowDialogueSequence with: {result.dialogueSequence.name}");
+                
+                // If scene change is on Interactable but not in sequence, set it on the sequence temporarily
+                if (!string.IsNullOrEmpty(pendingSceneChange) && 
+                    string.IsNullOrEmpty(result.dialogueSequence.triggerSceneChangeOnComplete))
+                {
+                    // Note: This modifies the ScriptableObject! Better to handle via callback
+                    Debug.Log($"[InteractionManager] Scene change '{pendingSceneChange}' will happen after dialogue via Interactable setting");
+                    ScheduleSceneChangeAfterDialogue(pendingSceneChange);
+                }
+                
                 DialogueManager.Instance?.ShowDialogueSequence(result.dialogueSequence);
             }
             else if (!string.IsNullOrEmpty(result.dialogue))
             {
+                Debug.Log($"[InteractionManager] Calling ShowDialogue with: '{result.dialogue}'");
+                
+                // For simple dialogue, schedule scene change after it ends
+                if (!string.IsNullOrEmpty(pendingSceneChange))
+                {
+                    ScheduleSceneChangeAfterDialogue(pendingSceneChange);
+                }
+                
                 DialogueManager.Instance?.ShowDialogue(result.dialogue, result.portrait);
+            }
+            else
+            {
+                Debug.Log($"[InteractionManager] No dialogue to show!");
+                
+                // No dialogue - immediate scene change
+                if (!string.IsNullOrEmpty(pendingSceneChange))
+                {
+                    Debug.Log($"[InteractionManager] Immediate scene change to: {pendingSceneChange}");
+                    GameSceneManager.Instance?.LoadScene(pendingSceneChange);
+                }
             }
             
             if (result.discoveredClue != null)
@@ -179,6 +218,34 @@ namespace PointClickDetective
             
             currentTarget = null;
             OnInteractionEnded?.Invoke();
+        }
+        
+        private string pendingSceneChangeAfterDialogue;
+        
+        private void ScheduleSceneChangeAfterDialogue(string sceneId)
+        {
+            pendingSceneChangeAfterDialogue = sceneId;
+            
+            if (DialogueManager.Instance != null)
+            {
+                DialogueManager.Instance.OnDialogueEnded.AddListener(OnDialogueEndedForSceneChange);
+            }
+        }
+        
+        private void OnDialogueEndedForSceneChange()
+        {
+            if (DialogueManager.Instance != null)
+            {
+                DialogueManager.Instance.OnDialogueEnded.RemoveListener(OnDialogueEndedForSceneChange);
+            }
+            
+            if (!string.IsNullOrEmpty(pendingSceneChangeAfterDialogue))
+            {
+                Debug.Log($"[InteractionManager] Dialogue ended - changing scene to: {pendingSceneChangeAfterDialogue}");
+                string sceneId = pendingSceneChangeAfterDialogue;
+                pendingSceneChangeAfterDialogue = null;
+                GameSceneManager.Instance?.LoadScene(sceneId);
+            }
         }
         
         #endregion

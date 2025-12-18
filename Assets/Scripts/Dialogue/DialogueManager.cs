@@ -78,6 +78,7 @@ namespace PointClickDetective
         private bool isShowing;
         private bool isTyping;
         private string currentFullText;
+        private DialogueLine currentLine;
         private Coroutine typewriterCoroutine;
         private Coroutine panelFadeCoroutine;
         private Coroutine animationFinishCoroutine;
@@ -340,6 +341,7 @@ namespace PointClickDetective
             bool wasShowing = isShowing;
             isShowing = true;
             currentFullText = line.text;
+            currentLine = line; // Store for scene change check on advance
             
             // Execute triggers for this line
             line.ExecuteTriggers();
@@ -493,6 +495,8 @@ namespace PointClickDetective
             // During typing: pause animation (optionally reset to first frame)
             // After typing: play animation
             
+            Debug.Log($"[DialogueManager] SetChatboxTypingMode({typing}) - Animator null? {chatboxAnimator == null}");
+            
             if (chatboxAnimator == null) return;
             
             if (typing)
@@ -510,6 +514,7 @@ namespace PointClickDetective
                 }
                 
                 chatboxAnimator.Pause();
+                Debug.Log("[DialogueManager] Chatbox PAUSED at frame 0");
                 
                 // Make sure display is visible
                 if (chatboxDisplay != null)
@@ -522,11 +527,13 @@ namespace PointClickDetective
                 // Re-enable looping and start playing animation
                 chatboxAnimator.IsLooping = true;
                 chatboxAnimator.Play();
+                Debug.Log("[DialogueManager] Chatbox PLAYING");
             }
         }
         
         private void OnTypingComplete()
         {
+            Debug.Log("[DialogueManager] OnTypingComplete called");
             // Switch from static to animated chatbox
             SetChatboxTypingMode(false);
             OnLineFinished?.Invoke();
@@ -551,6 +558,14 @@ namespace PointClickDetective
         
         private void AdvanceDialogue()
         {
+            // Check if current line triggers a scene change
+            string lineSceneChange = null;
+            if (currentLine != null && !string.IsNullOrEmpty(currentLine.triggerSceneChange))
+            {
+                lineSceneChange = currentLine.triggerSceneChange;
+                Debug.Log($"[DialogueManager] Line triggers scene change to: {lineSceneChange}");
+            }
+            
             if (dialogueQueue.Count > 0)
             {
                 StartNextLine();
@@ -559,15 +574,25 @@ namespace PointClickDetective
             {
                 CompleteSequence();
             }
+            
+            // Execute per-line scene change after dialogue advances
+            if (!string.IsNullOrEmpty(lineSceneChange))
+            {
+                GameSceneManager.Instance?.LoadScene(lineSceneChange);
+            }
         }
         
         private void CompleteSequence()
         {
+            // Store scene change before clearing sequence
+            string sceneToChangeTo = null;
+            
             // Execute sequence completion triggers
             if (currentSequence != null)
             {
                 if (!string.IsNullOrEmpty(currentSequence.setFlagOnComplete))
                 {
+                    Debug.Log($"[DialogueManager] Sequence complete - setting flag: {currentSequence.setFlagOnComplete}");
                     GameManager.Instance?.SetFlag(currentSequence.setFlagOnComplete);
                 }
                 
@@ -581,14 +606,29 @@ namespace PointClickDetective
                 {
                     DeductionBoardUI.Instance?.RevealQuestion(currentSequence.revealQuestionOnComplete);
                 }
+                
+                // Store scene change to execute after closing
+                if (!string.IsNullOrEmpty(currentSequence.triggerSceneChangeOnComplete))
+                {
+                    sceneToChangeTo = currentSequence.triggerSceneChangeOnComplete;
+                    Debug.Log($"[DialogueManager] Sequence complete - will change scene to: {sceneToChangeTo}");
+                }
             }
             
             currentSequence = null;
             CloseDialogue();
+            
+            // Execute scene change after dialogue is closed
+            if (!string.IsNullOrEmpty(sceneToChangeTo))
+            {
+                GameSceneManager.Instance?.LoadScene(sceneToChangeTo);
+            }
         }
         
         private void CloseDialogue()
         {
+            currentLine = null;
+            
             if (typewriterCoroutine != null)
             {
                 StopCoroutine(typewriterCoroutine);

@@ -273,11 +273,15 @@ namespace PointClickDetective
             }
             
             // Check for conditional dialogues first
-            var conditional = data.GetMatchingConditionalDialogue();
+            var conditional = data.GetMatchingConditionalDialogue(objectId);
+            Debug.Log($"[Interactable] LookAt '{objectId}': conditional={conditional}, dialogue={conditional?.dialogue}");
+            
             if (conditional != null && conditional.dialogue != null)
             {
-                // Execute after effects (set flag, discover clue)
-                conditional.ExecuteAfterEffects();
+                Debug.Log($"[Interactable] Using conditional dialogue: {conditional.dialogue.name}");
+                
+                // Execute after effects (set flag, discover clue, playOnce)
+                conditional.ExecuteAfterEffects(objectId);
                 
                 OnLookedAt?.Invoke();
                 
@@ -289,6 +293,8 @@ namespace PointClickDetective
                     discoveredClue = conditional.discoverClueAfter
                 };
             }
+            
+            Debug.Log($"[Interactable] No conditional matched, checking fallback sequence");
             
             // Check if using fallback dialogue sequence
             if (data.HasLookSequence)
@@ -324,7 +330,9 @@ namespace PointClickDetective
                 success = true,
                 dialogue = dialogue,
                 portrait = portrait,
-                discoveredClue = discoveredClue
+                discoveredClue = discoveredClue,
+                triggeredSceneChange = data.triggersSceneChange,
+                targetSceneId = data.targetSceneId
             };
         }
         

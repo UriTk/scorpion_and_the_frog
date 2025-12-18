@@ -17,7 +17,6 @@ namespace PointClickDetective
         [Header("Playback")]
         [SerializeField] private float fps = 12f;
         [SerializeField] private bool loop = true;
-        [SerializeField] private bool playOnAwake = true;
         
         [Header("Display")]
         [SerializeField] private RawImage targetRawImage;
@@ -45,14 +44,9 @@ namespace PointClickDetective
         
         private void Start()
         {
-            Debug.Log($"[SpriteSheetAnimator] START - Sheet: {(spriteSheet != null ? spriteSheet.name : "NULL")}, RawImage: {(targetRawImage != null ? targetRawImage.name : "NULL")}");
-            
+            // Prepare and show frame 0, but do NOT play
+            // DialogueManager will call Play() when needed
             Prepare();
-            
-            if (playOnAwake)
-            {
-                Play();
-            }
         }
         
         private void Update()
@@ -92,7 +86,6 @@ namespace PointClickDetective
         {
             if (targetRawImage == null || spriteSheet == null) return;
             
-            // Ensure texture is assigned
             if (targetRawImage.texture != spriteSheet)
             {
                 targetRawImage.texture = spriteSheet;
@@ -104,7 +97,6 @@ namespace PointClickDetective
             int col = frameIndex % columns;
             int row = frameIndex / columns;
             
-            // Top-left origin (row 0 = top of image)
             float x = col * frameWidth;
             float y = 1f - ((row + 1) * frameHeight);
             
@@ -113,30 +105,20 @@ namespace PointClickDetective
         
         public void Prepare()
         {
-            if (spriteSheet == null)
-            {
-                Debug.LogError("[SpriteSheetAnimator] No sprite sheet assigned!");
-                return;
-            }
-            
-            if (targetRawImage == null)
-            {
-                Debug.LogError("[SpriteSheetAnimator] No RawImage assigned!");
-                return;
-            }
+            if (spriteSheet == null || targetRawImage == null) return;
             
             targetRawImage.texture = spriteSheet;
             isPrepared = true;
+            isPlaying = false;
+            currentFrame = 0;
+            frameTimer = 0f;
             DisplayFrame(0);
-            
-            Debug.Log($"[SpriteSheetAnimator] PREPARED - {columns}x{rows} grid, {totalFrames} frames, {fps} fps");
         }
         
         public void Play()
         {
             if (!isPrepared) Prepare();
             isPlaying = true;
-            Debug.Log("[SpriteSheetAnimator] PLAYING");
         }
         
         public void Pause()

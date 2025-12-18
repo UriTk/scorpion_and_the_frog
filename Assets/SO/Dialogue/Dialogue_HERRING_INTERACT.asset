@@ -17,7 +17,7 @@ MonoBehaviour:
     text: Ferdinand J. Croaker, P.I. I'd like to ask you a few questions, if you
       don't mind.
     setFlagOnShow: 
-    discoverClueOnShow: {fileID: 0}
+    discoverClueOnShow: {fileID: 11400000, guid: f41df94a111c6ec4091c80ad61155260, type: 2}
     revealQuestionOnShow: {fileID: 0}
     requiresFlag: 
     requiresClue: {fileID: 0}

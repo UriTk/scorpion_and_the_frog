@@ -323,6 +323,14 @@ namespace PointClickDetective
             gameFlags.Remove(flagName);
         }
         
+        /// <summary>
+        /// Alias for RemoveFlag.
+        /// </summary>
+        public void ClearFlag(string flagName)
+        {
+            RemoveFlag(flagName);
+        }
+        
         public void MarkAsLookedAt(string objectId)
         {
             string key = $"{currentCharacter}_{objectId}";

@@ -272,7 +272,25 @@ namespace PointClickDetective
                 GameManager.Instance?.SetFlag(data.unlockFlagOnLook);
             }
             
-            // Check if using dialogue sequence
+            // Check for conditional dialogues first
+            var conditional = data.GetMatchingConditionalDialogue();
+            if (conditional != null && conditional.dialogue != null)
+            {
+                // Execute after effects (set flag, discover clue)
+                conditional.ExecuteAfterEffects();
+                
+                OnLookedAt?.Invoke();
+                
+                return new InteractionResult
+                {
+                    success = true,
+                    dialogueSequence = conditional.dialogue,
+                    conditionalDialogue = conditional,
+                    discoveredClue = conditional.discoverClueAfter
+                };
+            }
+            
+            // Check if using fallback dialogue sequence
             if (data.HasLookSequence)
             {
                 // Sequence handles its own clues/flags
@@ -285,7 +303,7 @@ namespace PointClickDetective
                 };
             }
             
-            // Simple dialogue mode
+            // Fallback to simple dialogue mode
             dialogue = data.lookAtDialogue;
             
             // Discover clue if configured
@@ -310,103 +328,6 @@ namespace PointClickDetective
             };
         }
         
-        public InteractionResult Interact()
-        {
-            var data = GetCurrentCharacterData();
-            if (data == null) return new InteractionResult { success = false };
-            
-            string dialogue;
-            Sprite portrait = data.interactPortrait ?? GameManager.Instance?.GetCurrentCharacterPortrait();
-            ClueSO discoveredClue = null;
-            QuestionSO revealedQuestion = null;
-            
-            // Check prerequisites
-            if (!MeetsPrerequisites(out _, out string lockedDialogue))
-            {
-                dialogue = !string.IsNullOrEmpty(lockedDialogue) 
-                    ? lockedDialogue 
-                    : "I can't do that right now.";
-                    
-                return new InteractionResult
-                {
-                    success = false,
-                    dialogue = dialogue,
-                    portrait = portrait,
-                    isLocked = true
-                };
-            }
-            
-            // Mark as interacted
-            GameManager.Instance?.MarkAsInteracted(objectId);
-            
-            // Set unlock flag if configured
-            if (!string.IsNullOrEmpty(data.unlockFlagOnInteract))
-            {
-                GameManager.Instance?.SetFlag(data.unlockFlagOnInteract);
-            }
-            
-            // Check if using dialogue sequence
-            if (data.HasInteractSequence)
-            {
-                // Sequence handles its own clues/flags
-                // But still trigger scene change if configured
-                if (data.triggersSceneChange && !string.IsNullOrEmpty(data.targetSceneId))
-                {
-                    // Scene change will happen after dialogue via the sequence's triggers
-                    // Or we could store it and handle after sequence completes
-                }
-                
-                OnInteracted?.Invoke();
-                
-                return new InteractionResult
-                {
-                    success = true,
-                    dialogueSequence = data.interactSequence,
-                    triggeredSceneChange = data.triggersSceneChange,
-                    targetSceneId = data.targetSceneId
-                };
-            }
-            
-            // Simple dialogue mode
-            dialogue = data.interactDialogue;
-            
-            // Discover clue if configured
-            if (data.clueOnInteract != null)
-            {
-                bool isNew = ClueManager.Instance?.DiscoverClue(data.clueOnInteract) ?? false;
-                if (isNew)
-                {
-                    discoveredClue = data.clueOnInteract;
-                    OnClueDiscovered?.Invoke(discoveredClue);
-                }
-            }
-            
-            // Reveal question if configured
-            if (data.questionRevealed != null)
-            {
-                revealedQuestion = data.questionRevealed;
-                // Question revelation is handled by DeductionManager based on clues
-            }
-            
-            // Trigger scene change if configured
-            if (data.triggersSceneChange && !string.IsNullOrEmpty(data.targetSceneId))
-            {
-                GameManager.Instance?.ChangeScene(data.targetSceneId);
-            }
-            
-            OnInteracted?.Invoke();
-            
-            return new InteractionResult
-            {
-                success = true,
-                dialogue = dialogue,
-                portrait = portrait,
-                discoveredClue = discoveredClue,
-                revealedQuestion = revealedQuestion,
-                triggeredSceneChange = data.triggersSceneChange,
-                targetSceneId = data.targetSceneId
-            };
-        }
         
         #endregion
         

@@ -24,6 +24,39 @@ namespace PointClickDetective
         [Tooltip("The flag name that unlocks this scene (leave empty if not locked)")]
         [SerializeField] private string unlockFlagName;
         
+        [Header("Entry Dialogue - First Visit")]
+        [Tooltip("Dialogue to play on first visit to this scene")]
+        [SerializeField] private DialogueSequenceSO firstVisitDialogue;
+        [Tooltip("Only play first visit dialogue if this flag is set (leave empty for no requirement)")]
+        [SerializeField] private string firstVisitRequiresFlag;
+        
+        [Header("Entry Dialogue - Scorpion")]
+        [Tooltip("Dialogue to play when entering as Scorpion (after first visit)")]
+        [SerializeField] private DialogueSequenceSO scorpionEntryDialogue;
+        [Tooltip("Only play if this flag is set")]
+        [SerializeField] private string scorpionEntryRequiresFlag;
+        [Tooltip("Only play once per session (uses auto-generated flag)")]
+        [SerializeField] private bool scorpionEntryOncePerSession = false;
+        
+        [Header("Entry Dialogue - Frog")]
+        [Tooltip("Dialogue to play when entering as Frog (after first visit)")]
+        [SerializeField] private DialogueSequenceSO frogEntryDialogue;
+        [Tooltip("Only play if this flag is set")]
+        [SerializeField] private string frogEntryRequiresFlag;
+        [Tooltip("Only play once per session (uses auto-generated flag)")]
+        [SerializeField] private bool frogEntryOncePerSession = false;
+        
+        [Header("Entry Dialogue - Character Switch")]
+        [Tooltip("Dialogue when switching TO Scorpion while in this scene")]
+        [SerializeField] private DialogueSequenceSO switchToScorpionDialogue;
+        [Tooltip("Only play if this flag is set")]
+        [SerializeField] private string switchToScorpionRequiresFlag;
+        
+        [Tooltip("Dialogue when switching TO Frog while in this scene")]
+        [SerializeField] private DialogueSequenceSO switchToFrogDialogue;
+        [Tooltip("Only play if this flag is set")]
+        [SerializeField] private string switchToFrogRequiresFlag;
+        
         [Header("Background Scaling")]
         [Tooltip("If true, automatically scales background and effect to fill camera view")]
         [SerializeField] private bool stretchToFillCamera = true;
@@ -96,6 +129,54 @@ namespace PointClickDetective
         {
             // Ensure setup runs if Awake was called while inactive
             SetupEffectAnimator();
+            
+            // Subscribe to character changes while this scene is active
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.OnCharacterChanged.AddListener(OnCharacterSwitched);
+            }
+        }
+        
+        private void OnDisable()
+        {
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.OnCharacterChanged.RemoveListener(OnCharacterSwitched);
+            }
+        }
+        
+        private void OnCharacterSwitched(CharacterType newCharacter)
+        {
+            // Only trigger if this is the active scene
+            if (GameSceneManager.Instance?.CurrentScene != this) return;
+            
+            DialogueSequenceSO dialogue = null;
+            string requiredFlag = null;
+            
+            if (newCharacter == CharacterType.Scorpion)
+            {
+                dialogue = switchToScorpionDialogue;
+                requiredFlag = switchToScorpionRequiresFlag;
+            }
+            else
+            {
+                dialogue = switchToFrogDialogue;
+                requiredFlag = switchToFrogRequiresFlag;
+            }
+            
+            if (dialogue != null)
+            {
+                // Check flag requirement
+                if (!string.IsNullOrEmpty(requiredFlag))
+                {
+                    if (GameManager.Instance == null || !GameManager.Instance.HasFlag(requiredFlag))
+                    {
+                        return;
+                    }
+                }
+                
+                DialogueManager.Instance?.ShowDialogueSequence(dialogue);
+            }
         }
         
         private void SetupEffectAnimator()
@@ -144,13 +225,16 @@ namespace PointClickDetective
         /// </summary>
         public void OnEnter()
         {
-            // Set flag for visiting this scene (first time only)
+            bool isFirstVisit = false;
+            
+            // Check if first visit
             if (GameManager.Instance != null && !string.IsNullOrEmpty(sceneId))
             {
                 string visitedFlag = $"visited_{sceneId}";
                 if (!GameManager.Instance.HasFlag(visitedFlag))
                 {
                     GameManager.Instance.SetFlag(visitedFlag);
+                    isFirstVisit = true;
                     Debug.Log($"[GameSceneContainer] First visit to scene: {sceneId}");
                 }
             }
@@ -183,6 +267,93 @@ namespace PointClickDetective
             
             OnSceneEnter?.Invoke();
             Debug.Log($"[GameSceneContainer] Entered scene: {sceneId}");
+            
+            // Trigger entry dialogue (after other setup completes)
+            TriggerEntryDialogue(isFirstVisit);
+        }
+        
+        /// <summary>
+        /// Triggers appropriate entry dialogue based on visit status and character.
+        /// </summary>
+        private void TriggerEntryDialogue(bool isFirstVisit)
+        {
+            DialogueSequenceSO dialogue = null;
+            
+            // First visit takes priority
+            if (isFirstVisit && firstVisitDialogue != null)
+            {
+                // Check flag requirement
+                if (!string.IsNullOrEmpty(firstVisitRequiresFlag))
+                {
+                    if (GameManager.Instance != null && GameManager.Instance.HasFlag(firstVisitRequiresFlag))
+                    {
+                        dialogue = firstVisitDialogue;
+                    }
+                }
+                else
+                {
+                    dialogue = firstVisitDialogue;
+                }
+            }
+            
+            // If no first visit dialogue, check character-specific entry
+            if (dialogue == null)
+            {
+                CharacterType character = GameManager.Instance?.CurrentCharacter ?? CharacterType.Scorpion;
+                
+                if (character == CharacterType.Scorpion && scorpionEntryDialogue != null)
+                {
+                    bool meetsRequirement = string.IsNullOrEmpty(scorpionEntryRequiresFlag) ||
+                        (GameManager.Instance?.HasFlag(scorpionEntryRequiresFlag) ?? false);
+                    
+                    if (meetsRequirement)
+                    {
+                        // Check once-per-session
+                        if (scorpionEntryOncePerSession)
+                        {
+                            string sessionFlag = $"session_scorpion_entry_{sceneId}";
+                            if (GameManager.Instance != null && !GameManager.Instance.HasFlag(sessionFlag))
+                            {
+                                GameManager.Instance.SetFlag(sessionFlag);
+                                dialogue = scorpionEntryDialogue;
+                            }
+                        }
+                        else
+                        {
+                            dialogue = scorpionEntryDialogue;
+                        }
+                    }
+                }
+                else if (character == CharacterType.Frog && frogEntryDialogue != null)
+                {
+                    bool meetsRequirement = string.IsNullOrEmpty(frogEntryRequiresFlag) ||
+                        (GameManager.Instance?.HasFlag(frogEntryRequiresFlag) ?? false);
+                    
+                    if (meetsRequirement)
+                    {
+                        // Check once-per-session
+                        if (frogEntryOncePerSession)
+                        {
+                            string sessionFlag = $"session_frog_entry_{sceneId}";
+                            if (GameManager.Instance != null && !GameManager.Instance.HasFlag(sessionFlag))
+                            {
+                                GameManager.Instance.SetFlag(sessionFlag);
+                                dialogue = frogEntryDialogue;
+                            }
+                        }
+                        else
+                        {
+                            dialogue = frogEntryDialogue;
+                        }
+                    }
+                }
+            }
+            
+            // Play the dialogue
+            if (dialogue != null)
+            {
+                DialogueManager.Instance?.ShowDialogueSequence(dialogue);
+            }
         }
         
         /// <summary>

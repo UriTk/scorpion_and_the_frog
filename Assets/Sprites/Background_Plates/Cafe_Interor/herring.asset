@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145e893c5cbda854a81f53ec342d9db4, type: 3}
+  m_Name: herring
+  m_EditorClassIdentifier: PointClickDetective::PointClickDetective.DialogueSequenceSO
+  lines:
+  - speaker: {fileID: 11400000, guid: 20b09a31d16407f4191736868d7cc7e4, type: 2}
+    text: What do you want? I'm busy.
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 11400000, guid: 9984448fc1c688d4588d2d7e3867474b, type: 2}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: 
+    triggerSceneChange: 
+    delayBefore: 0
+  setFlagOnComplete: 
+  discoverClueOnComplete: {fileID: 0}
+  revealQuestionOnComplete: {fileID: 0}

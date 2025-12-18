@@ -13,7 +13,6 @@ namespace PointClickDetective.Editor
         private SerializedProperty frogData;
         private SerializedProperty belongsToSceneId;
         private SerializedProperty onLookedAt;
-        private SerializedProperty onInteracted;
         private SerializedProperty onClueDiscovered;
         
         private bool showScorpionData = true;
@@ -28,7 +27,6 @@ namespace PointClickDetective.Editor
             frogData = serializedObject.FindProperty("frogData");
             belongsToSceneId = serializedObject.FindProperty("belongsToSceneId");
             onLookedAt = serializedObject.FindProperty("OnLookedAt");
-            onInteracted = serializedObject.FindProperty("OnInteracted");
             onClueDiscovered = serializedObject.FindProperty("OnClueDiscovered");
         }
         
@@ -76,7 +74,6 @@ namespace PointClickDetective.Editor
             {
                 EditorGUI.indentLevel++;
                 EditorGUILayout.PropertyField(onLookedAt);
-                EditorGUILayout.PropertyField(onInteracted);
                 EditorGUILayout.PropertyField(onClueDiscovered);
                 EditorGUI.indentLevel--;
             }
@@ -87,20 +84,15 @@ namespace PointClickDetective.Editor
         private void DrawCharacterData(SerializedProperty data)
         {
             var isVisible = data.FindPropertyRelative("isVisibleToThisCharacter");
+            var conditionalDialogues = data.FindPropertyRelative("conditionalDialogues");
             var lookDialogue = data.FindPropertyRelative("lookAtDialogue");
             var lookPortrait = data.FindPropertyRelative("lookAtPortrait");
             var lookSequence = data.FindPropertyRelative("lookAtSequence");
-            var interactDialogue = data.FindPropertyRelative("interactDialogue");
-            var interactPortrait = data.FindPropertyRelative("interactPortrait");
-            var interactSequence = data.FindPropertyRelative("interactSequence");
             var prerequisites = data.FindPropertyRelative("prerequisites");
             var clueOnLook = data.FindPropertyRelative("clueOnLook");
-            var clueOnInteract = data.FindPropertyRelative("clueOnInteract");
-            var questionRevealed = data.FindPropertyRelative("questionRevealed");
             var triggersSceneChange = data.FindPropertyRelative("triggersSceneChange");
             var targetSceneId = data.FindPropertyRelative("targetSceneId");
             var unlockFlagOnLook = data.FindPropertyRelative("unlockFlagOnLook");
-            var unlockFlagOnInteract = data.FindPropertyRelative("unlockFlagOnInteract");
             
             // Visibility
             EditorGUILayout.PropertyField(isVisible, new GUIContent("Visible to Character"));
@@ -113,14 +105,25 @@ namespace PointClickDetective.Editor
             
             EditorGUILayout.Space();
             
-            // Look At Section
-            EditorGUILayout.LabelField("Look At (Eye)", EditorStyles.miniBoldLabel);
+            // Conditional Dialogues (Priority)
+            EditorGUILayout.LabelField("Conditional Dialogues (Checked In Order)", EditorStyles.miniBoldLabel);
+            EditorGUILayout.PropertyField(conditionalDialogues, new GUIContent("Dialogues"), true);
+            
+            if (conditionalDialogues.arraySize > 0)
+            {
+                EditorGUILayout.HelpBox("First matching conditional dialogue plays. If none match, falls back to below.", MessageType.Info);
+            }
+            
+            EditorGUILayout.Space();
+            
+            // Fallback Section
+            EditorGUILayout.LabelField("Fallback Dialogue", EditorStyles.miniBoldLabel);
             EditorGUILayout.PropertyField(lookSequence, new GUIContent("Dialogue Sequence"));
             
             bool hasLookSequence = lookSequence.objectReferenceValue != null;
             if (hasLookSequence)
             {
-                EditorGUILayout.HelpBox("Using Dialogue Sequence. Simple dialogue below is ignored.", MessageType.Info);
+                EditorGUILayout.HelpBox("Using Dialogue Sequence as fallback.", MessageType.Info);
             }
             
             EditorGUI.BeginDisabledGroup(hasLookSequence);
@@ -129,28 +132,7 @@ namespace PointClickDetective.Editor
             EditorGUILayout.PropertyField(clueOnLook, new GUIContent("Clue Discovered"));
             EditorGUI.EndDisabledGroup();
             
-            EditorGUILayout.PropertyField(unlockFlagOnLook, new GUIContent("Set Flag"));
-            
-            EditorGUILayout.Space();
-            
-            // Interact Section
-            EditorGUILayout.LabelField("Interact (Hand)", EditorStyles.miniBoldLabel);
-            EditorGUILayout.PropertyField(interactSequence, new GUIContent("Dialogue Sequence"));
-            
-            bool hasInteractSequence = interactSequence.objectReferenceValue != null;
-            if (hasInteractSequence)
-            {
-                EditorGUILayout.HelpBox("Using Dialogue Sequence. Simple dialogue below is ignored.", MessageType.Info);
-            }
-            
-            EditorGUI.BeginDisabledGroup(hasInteractSequence);
-            EditorGUILayout.PropertyField(interactDialogue, new GUIContent("Simple Dialogue"));
-            EditorGUILayout.PropertyField(interactPortrait, new GUIContent("Portrait Override"));
-            EditorGUILayout.PropertyField(clueOnInteract, new GUIContent("Clue Discovered"));
-            EditorGUILayout.PropertyField(questionRevealed, new GUIContent("Question Revealed"));
-            EditorGUI.EndDisabledGroup();
-            
-            EditorGUILayout.PropertyField(unlockFlagOnInteract, new GUIContent("Set Flag"));
+            EditorGUILayout.PropertyField(unlockFlagOnLook, new GUIContent("Set Flag On Click"));
             
             EditorGUILayout.Space();
             

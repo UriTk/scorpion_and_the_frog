@@ -16,7 +16,7 @@ MonoBehaviour:
   - speaker: {fileID: 0}
     text: Hey, barkeep. Another.
     setFlagOnShow: 
-    discoverClueOnShow: {fileID: 0}
+    discoverClueOnShow: {fileID: 11400000, guid: 9984448fc1c688d4588d2d7e3867474b, type: 2}
     revealQuestionOnShow: {fileID: 0}
     requiresFlag: 
     requiresClue: {fileID: 0}

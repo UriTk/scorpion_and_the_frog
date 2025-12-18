@@ -33,6 +33,26 @@ MonoBehaviour:
     skipIfFlag: FALSE
     triggerSceneChange: 
     delayBefore: 0
+  - speaker: {fileID: 0}
+    text: Hm... Nobody came after me.
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: FALSE
+    triggerSceneChange: 
+    delayBefore: 0
+  - speaker: {fileID: 0}
+    text: So that should be everyone here.
+    setFlagOnShow: 
+    discoverClueOnShow: {fileID: 0}
+    revealQuestionOnShow: {fileID: 0}
+    requiresFlag: 
+    requiresClue: {fileID: 0}
+    skipIfFlag: FALSE
+    triggerSceneChange: 
+    delayBefore: 0
   setFlagOnComplete: 
   discoverClueOnComplete: {fileID: 0}
   revealQuestionOnComplete: {fileID: 0}

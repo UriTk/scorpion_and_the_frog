@@ -21,7 +21,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6f9d6d7b02feda447a931f7d6461879a, type: 3}
   - {fileID: 8300000, guid: 6a8a79db29770564bb0dc788e1c13bd6, type: 3}
   pitchRange: {x: 0.95, y: 1.05}
-  volume: 0.8
+  volume: 0.5
   useItalicSettings: 1
   italicCharsPerSecond: 25
   italicTypingSounds:

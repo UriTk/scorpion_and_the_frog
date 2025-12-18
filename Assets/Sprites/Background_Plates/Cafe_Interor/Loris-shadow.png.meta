@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: 7da9c69ca65c85648a639c06f1b676f8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2549237675782620612
+    second: Loris-shadow_0
+  - first:
+      213: -1053262906010215732
+    second: Loris-shadow_1
+  - first:
+      213: 347081973538294465
+    second: Loris-shadow_2
+  - first:
+      213: 2644516769460946774
+    second: Loris-shadow_3
+  - first:
+      213: -2254985023682343540
+    second: Loris-shadow_4
+  - first:
+      213: 4698114626940132693
+    second: Loris-shadow_5
+  - first:
+      213: 8291387100742844014
+    second: Loris-shadow_6
+  - first:
+      213: 1961880769317588056
+    second: Loris-shadow_7
+  - first:
+      213: 6293005870105215974
+    second: Loris-shadow_8
+  - first:
+      213: -6697991602964099109
+    second: Loris-shadow_9
+  - first:
+      213: 3189831616822604456
+    second: Loris-shadow_10
+  - first:
+      213: 9040142742522289929
+    second: Loris-shadow_11
+  - first:
+      213: -1923683618640340248
+    second: Loris-shadow_12
+  - first:
+      213: 6993449328709429685
+    second: Loris-shadow_13
+  - first:
+      213: 5720498060809645531
+    second: Loris-shadow_14
+  - first:
+      213: 4789518744064920888
+    second: Loris-shadow_15
+  - first:
+      213: -9176902623427193770
+    second: Loris-shadow_16
+  - first:
+      213: -908634595365464397
+    second: Loris-shadow_17
+  - first:
+      213: -335119887770243236
+    second: Loris-shadow_18
+  - first:
+      213: -4237348076664252264
+    second: Loris-shadow_19
+  - first:
+      213: -2374108513250203186
+    second: Loris-shadow_20
+  - first:
+      213: -8995260383540301401
+    second: Loris-shadow_21
+  - first:
+      213: 8209858848006750042
+    second: Loris-shadow_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Loris-shadow_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 284
+        width: 714
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a3fee17d94f9cd0800000000000000
+      internalID: -2549237675782620612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_1
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 402
+        width: 235
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cca5a28a7fe0261f0800000000000000
+      internalID: -1053262906010215732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_2
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 435
+        width: 169
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca01bc473511d400800000000000000
+      internalID: 347081973538294465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_3
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 438
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65788469df533b420800000000000000
+      internalID: 2644516769460946774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_4
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 390
+        width: 466
+        height: 681
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d8691811fa4b0e0800000000000000
+      internalID: -2254985023682343540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_5
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 319
+        width: 391
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d55dc8c5e033140800000000000000
+      internalID: 4698114626940132693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_6
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 396
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e780373ace01370800000000000000
+      internalID: 8291387100742844014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_7
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 387
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85c48da4a200a3b10800000000000000
+      internalID: 1961880769317588056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_8
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 376
+        width: 47
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e3c1114f7f355750800000000000000
+      internalID: 6293005870105215974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_9
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 364
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf86c4ef14fb03a0800000000000000
+      internalID: -6697991602964099109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_10
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 384
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a2750e74fe844c20800000000000000
+      internalID: 3189831616822604456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_11
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 371
+        width: 19
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90fddd67de9057d70800000000000000
+      internalID: 9040142742522289929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_12
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 320
+        width: 27
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ea54b2e0f3bd45e0800000000000000
+      internalID: -1923683618640340248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_13
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 320
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b96b609c19bd0160800000000000000
+      internalID: 6993449328709429685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_14
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 319
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bddaed48daa436f40800000000000000
+      internalID: 5720498060809645531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_15
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 323
+        width: 51
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d8019fbe9c77240800000000000000
+      internalID: 4789518744064920888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65495407fa715a080800000000000000
+      internalID: -9176902623427193770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_17
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 277
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b65c9056a1e363f0800000000000000
+      internalID: -908634595365464397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_18
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 300
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f2944dc3a695bf0800000000000000
+      internalID: -335119887770243236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_19
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 288
+        width: 96
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8981ebcef5ae135c0800000000000000
+      internalID: -4237348076664252264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_20
+      rect:
+        serializedVersion: 2
+        x: 1842
+        y: 281
+        width: 60
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec9ad71c2e87d0fd0800000000000000
+      internalID: -2374108513250203186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_21
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 272
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a1bfe0175a6a2380800000000000000
+      internalID: -8995260383540301401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Loris-shadow_22
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 300
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f3a83ef174fe170800000000000000
+      internalID: 8209858848006750042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Loris-shadow_0: -2549237675782620612
+      Loris-shadow_1: -1053262906010215732
+      Loris-shadow_10: 3189831616822604456
+      Loris-shadow_11: 9040142742522289929
+      Loris-shadow_12: -1923683618640340248
+      Loris-shadow_13: 6993449328709429685
+      Loris-shadow_14: 5720498060809645531
+      Loris-shadow_15: 4789518744064920888
+      Loris-shadow_16: -9176902623427193770
+      Loris-shadow_17: -908634595365464397
+      Loris-shadow_18: -335119887770243236
+      Loris-shadow_19: -4237348076664252264
+      Loris-shadow_2: 347081973538294465
+      Loris-shadow_20: -2374108513250203186
+      Loris-shadow_21: -8995260383540301401
+      Loris-shadow_22: 8209858848006750042
+      Loris-shadow_3: 2644516769460946774
+      Loris-shadow_4: -2254985023682343540
+      Loris-shadow_5: 4698114626940132693
+      Loris-shadow_6: 8291387100742844014
+      Loris-shadow_7: 1961880769317588056
+      Loris-shadow_8: 6293005870105215974
+      Loris-shadow_9: -6697991602964099109
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

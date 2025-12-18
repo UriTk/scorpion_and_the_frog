@@ -88,7 +88,7 @@ MonoBehaviour:
     delayBefore: 0
   - speaker: {fileID: 0}
     text: Good for him. He's had a rocky love life, that one.
-    setFlagOnShow: 
+    setFlagOnShow: lin
     discoverClueOnShow: {fileID: 0}
     revealQuestionOnShow: {fileID: 0}
     requiresFlag: 

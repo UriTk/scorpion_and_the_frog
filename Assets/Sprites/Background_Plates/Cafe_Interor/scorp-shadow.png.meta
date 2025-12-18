@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: 675c5d25565ec5543b50767453067f7d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8114205508336419461
+    second: scorp-shadow_0
+  - first:
+      213: 5889727680363189009
+    second: scorp-shadow_1
+  - first:
+      213: -5436818984775378048
+    second: scorp-shadow_2
+  - first:
+      213: -4999741640010701731
+    second: scorp-shadow_3
+  - first:
+      213: -4127278938013815059
+    second: scorp-shadow_4
+  - first:
+      213: 3343004959616547595
+    second: scorp-shadow_5
+  - first:
+      213: 7297327887094528765
+    second: scorp-shadow_6
+  - first:
+      213: -9059835672586858747
+    second: scorp-shadow_7
+  - first:
+      213: -3281510360546405174
+    second: scorp-shadow_8
+  - first:
+      213: 3648305466222461061
+    second: scorp-shadow_9
+  - first:
+      213: 892998791564570811
+    second: scorp-shadow_10
+  - first:
+      213: 2293084972240665596
+    second: scorp-shadow_11
+  - first:
+      213: -6241440018223267142
+    second: scorp-shadow_12
+  - first:
+      213: -8575432991753250157
+    second: scorp-shadow_13
+  - first:
+      213: 7037990018632431615
+    second: scorp-shadow_14
+  - first:
+      213: -7638117281762099023
+    second: scorp-shadow_15
+  - first:
+      213: 2107792132314648514
+    second: scorp-shadow_16
+  - first:
+      213: -170782563935752730
+    second: scorp-shadow_17
+  - first:
+      213: -5959864564844280145
+    second: scorp-shadow_18
+  - first:
+      213: 5026796871895285937
+    second: scorp-shadow_19
+  - first:
+      213: 8702114963474569508
+    second: scorp-shadow_20
+  - first:
+      213: -3467120243913027253
+    second: scorp-shadow_21
+  - first:
+      213: -7392721591821866959
+    second: scorp-shadow_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: scorp-shadow_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 284
+        width: 714
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58209ee3be27b9070800000000000000
+      internalID: 8114205508336419461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_1
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 402
+        width: 235
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11355d3ce148cb150800000000000000
+      internalID: 5889727680363189009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_2
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 435
+        width: 169
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08b1d5850f98c84b0800000000000000
+      internalID: -5436818984775378048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_3
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 438
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d54ee6ad7795d9ab0800000000000000
+      internalID: -4999741640010701731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_4
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 390
+        width: 466
+        height: 681
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee2cb25ca5f8b6c0800000000000000
+      internalID: -4127278938013815059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_5
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 319
+        width: 391
+        height: 761
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b305c7c4db46e20800000000000000
+      internalID: 3343004959616547595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_6
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 396
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfa32d7ec01554560800000000000000
+      internalID: 7297327887094528765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_7
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 387
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50f4c04f47ff44280800000000000000
+      internalID: -9059835672586858747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_8
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 376
+        width: 47
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac41ed896bbb572d0800000000000000
+      internalID: -3281510360546405174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_9
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 364
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5804e42fd7261a230800000000000000
+      internalID: 3648305466222461061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_10
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 384
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb03f0c6ba1946c00800000000000000
+      internalID: 892998791564570811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_11
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 371
+        width: 19
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfbf03a02aca2df10800000000000000
+      internalID: 2293084972240665596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_12
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 320
+        width: 27
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab205ea3f53f169a0800000000000000
+      internalID: -6241440018223267142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_13
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 320
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ad16be021fdf880800000000000000
+      internalID: -8575432991753250157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_14
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 319
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff7b45112a6fba160800000000000000
+      internalID: 7037990018632431615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_15
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 323
+        width: 51
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b04ccbfcc4fff590800000000000000
+      internalID: -7638117281762099023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf4afad6c1604d10800000000000000
+      internalID: 2107792132314648514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_17
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 277
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed67c6b92241adf0800000000000000
+      internalID: -170782563935752730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_18
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 300
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa6c40741ce4a4da0800000000000000
+      internalID: -5959864564844280145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_19
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 288
+        width: 96
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b00d533f15c2c540800000000000000
+      internalID: 5026796871895285937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_20
+      rect:
+        serializedVersion: 2
+        x: 1842
+        y: 281
+        width: 60
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4295388147f14c870800000000000000
+      internalID: 8702114963474569508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_21
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 272
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b419ffbf18052efc0800000000000000
+      internalID: -3467120243913027253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scorp-shadow_22
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 300
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 138e81c61e6c76990800000000000000
+      internalID: -7392721591821866959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      scorp-shadow_0: 8114205508336419461
+      scorp-shadow_1: 5889727680363189009
+      scorp-shadow_10: 892998791564570811
+      scorp-shadow_11: 2293084972240665596
+      scorp-shadow_12: -6241440018223267142
+      scorp-shadow_13: -8575432991753250157
+      scorp-shadow_14: 7037990018632431615
+      scorp-shadow_15: -7638117281762099023
+      scorp-shadow_16: 2107792132314648514
+      scorp-shadow_17: -170782563935752730
+      scorp-shadow_18: -5959864564844280145
+      scorp-shadow_19: 5026796871895285937
+      scorp-shadow_2: -5436818984775378048
+      scorp-shadow_20: 8702114963474569508
+      scorp-shadow_21: -3467120243913027253
+      scorp-shadow_22: -7392721591821866959
+      scorp-shadow_3: -4999741640010701731
+      scorp-shadow_4: -4127278938013815059
+      scorp-shadow_5: 3343004959616547595
+      scorp-shadow_6: 7297327887094528765
+      scorp-shadow_7: -9059835672586858747
+      scorp-shadow_8: -3281510360546405174
+      scorp-shadow_9: 3648305466222461061
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
